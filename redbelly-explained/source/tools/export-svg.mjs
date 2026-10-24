@@ -247,7 +247,7 @@ function toSVG(opts) {
 
 async function main() {
   const wanted = process.argv.slice(2).filter(a => !a.startsWith("--"));
-  const logo = "data:image/png;base64," + fs.readFileSync(path.join(sourceDir, "brand", "dao-logo-on-dark-600.png")).toString("base64");
+  const logo = "data:image/png;base64," + fs.readFileSync(path.join(sourceDir, "brand", "dao-logo-on-dark.png")).toString("base64");
   const browser = await chromium.launch(launchOptions());
   const probe = await browser.newPage();
   await probe.goto(pathToFileURL(path.join(sourceDir, "infographic.html")).href);
