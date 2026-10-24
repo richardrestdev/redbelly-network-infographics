@@ -1,0 +1,46 @@
+/*
+  Redbelly Explained: design tokens.
+
+  Colour, type and status values follow the Redbelly DAO Task Board Brand Kit
+  ("Kinetic Consensus", taskboard.redbellydao.network/brand): deep slate surfaces,
+  one red accent, monospace only for machine values. Variable names are local
+  to this series so the files can be edited without the board's stylesheet.
+*/
+
+@font-face { font-family: "Be Vietnam Pro"; font-weight: 400; font-style: normal; font-display: block; src: url("../fonts/be-vietnam-pro-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Be Vietnam Pro"; font-weight: 500; font-style: normal; font-display: block; src: url("../fonts/be-vietnam-pro-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Be Vietnam Pro"; font-weight: 600; font-style: normal; font-display: block; src: url("../fonts/be-vietnam-pro-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Be Vietnam Pro"; font-weight: 700; font-style: normal; font-display: block; src: url("../fonts/be-vietnam-pro-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "JetBrains Mono"; font-weight: 400; font-style: normal; font-display: block; src: url("../fonts/jetbrains-mono-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "JetBrains Mono"; font-weight: 500; font-style: normal; font-display: block; src: url("../fonts/jetbrains-mono-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "JetBrains Mono"; font-weight: 700; font-style: normal; font-display: block; src: url("../fonts/jetbrains-mono-latin-700-normal.woff2") format("woff2"); }
+
+:root {
+  /* Surfaces, darkest to lightest. Depth is tonal, never a drop shadow. */
+  --well:    #070c0f;  /* inset wells */
+  --deep:    #0a1014;  /* darkest wide layer */
+  --page:    #0c1317;  /* canvas base, never pure black */
+  --slate:   #141f26;  /* cards and panels */
+  --nest:    #17222a;  /* nested fills */
+  --steel:   #1d3140;  /* hero bands, icon tiles, active chips */
+  --hair:    #223039;  /* hairlines */
+  --edge:    #263641;  /* the 1px edge that lifts a card */
+  --rule:    #34444f;  /* borders */
+
+  /* Text on dark. Muted never goes below --t3 (7.02:1 on --page). */
+  --t1: #f1f5f8;
+  --t2: #c2ced6;
+  --t3: #8fa1ad;
+
+  /* The single accent, plus its small-text tint for dark grounds. */
+  --red:      #EF5350;
+  --red-ink:  #ffb3ae;
+  --red-wash: rgba(239, 83, 80, 0.14);
+
+  /* State colours, used only for status. */
+  --ok:   #86EFAC;
+  --warn: #FCD34D;
+
+  --sans: "Be Vietnam Pro", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, monospace;
+}

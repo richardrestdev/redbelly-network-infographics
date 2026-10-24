@@ -1,0 +1,19 @@
+{
+  "name": "redbelly-explained",
+  "private": true,
+  "description": "Source for the Redbelly Explained infographic series: content, styles, icons and the scripts that render, export and check every file.",
+  "scripts": {
+    "render": "node tools/render.mjs",
+    "svg": "node tools/export-svg.mjs",
+    "check": "node tools/check.mjs --write",
+    "compare": "node tools/compare-svg.mjs --write",
+    "lint": "node tools/lint-copy.mjs",
+    "verify": "node tools/verify-sources.mjs --write",
+    "site": "node tools/build-site.mjs",
+    "build": "npm run render && npm run svg && npm run check && npm run compare && npm run lint && npm run site",
+    "all": "npm run build && npm run verify && npm run site && npm run lint"
+  },
+  "devDependencies": {
+    "playwright": "^1.49.1"
+  }
+}

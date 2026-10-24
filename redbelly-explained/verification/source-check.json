@@ -1,0 +1,774 @@
+{
+  "checked": "2026-10-24T03:56:32.082Z",
+  "pages": 28,
+  "results": [
+    {
+      "topic": "01 What is Redbelly?",
+      "claim": "Redbelly is a layer 1 blockchain built for real world asset tokenisation.",
+      "src": "docs",
+      "quote": "The Redbelly Network is a layer 1 blockchain, built and optimised for real world asset tokenisation.",
+      "url": "https://docs.redbelly.network",
+      "found": true
+    },
+    {
+      "topic": "01 What is Redbelly?",
+      "claim": "Redbelly is a public network.",
+      "src": "tkTech",
+      "quote": "No. Redbelly is a public network",
+      "url": "https://tokeniser.com/technology",
+      "found": true
+    },
+    {
+      "topic": "01 What is Redbelly?",
+      "claim": "Asset types include bonds, (private) credit and real estate.",
+      "src": "home",
+      "quote": "TREASURIES & BONDS PRIVATE CREDIT CARBON CREDITS DERIVATIVES & COMMODITIES INSURANCE REAL ESTATE",
+      "url": "https://redbelly.network",
+      "found": true
+    },
+    {
+      "topic": "01 What is Redbelly?",
+      "claim": "Assets are issued and traded as tokens.",
+      "src": "home",
+      "quote": "Enabling asset issuers to tokenise and trade compliant onchain structured products",
+      "url": "https://redbelly.network",
+      "found": true
+    },
+    {
+      "topic": "01 What is Redbelly?",
+      "claim": "Every participant on the network is identity verified.",
+      "src": "wpPdf",
+      "quote": "all network participants are known. We enforce mandatory identity verification for all network participants",
+      "url": "https://redbelly.network/redbelly-network-whitepaper.pdf",
+      "found": true
+    },
+    {
+      "topic": "01 What is Redbelly?",
+      "claim": "Final in seconds: DBFT consensus makes transactions final within seconds.",
+      "src": "wpPdf",
+      "quote": "transactions are confirmed as irreversible within seconds",
+      "url": "https://redbelly.network/redbelly-network-whitepaper.pdf",
+      "found": true
+    },
+    {
+      "topic": "01 What is Redbelly?",
+      "claim": "No forks: the chain cannot fork.",
+      "src": "wpPdf",
+      "quote": "It cannot fork",
+      "url": "https://redbelly.network/redbelly-network-whitepaper.pdf",
+      "found": true
+    },
+    {
+      "topic": "01 What is Redbelly?",
+      "claim": "Ethereum compatible: runs Solidity smart contracts and Ethereum tools.",
+      "src": "wpPdf",
+      "quote": "allows Redbelly Network to support a diverse ecosystem of smart contracts, dApps, tools, and service providers",
+      "url": "https://redbelly.network/redbelly-network-whitepaper.pdf",
+      "found": true
+    },
+    {
+      "topic": "01 What is Redbelly?",
+      "claim": "Solidity developers can build on it.",
+      "src": "wpPdf",
+      "quote": "the largest pool of developers already proficient in the Solidity programming language",
+      "url": "https://redbelly.network/redbelly-network-whitepaper.pdf",
+      "found": true
+    },
+    {
+      "topic": "01 What is Redbelly?",
+      "claim": "Born at the University of Sydney, developed with CSIRO.",
+      "src": "rsSecure",
+      "quote": "Redbelly was born at the University of Sydney",
+      "url": "https://redbelly.network/research/redbelly-a-secure-fair-and-scalable-open-blockchain",
+      "found": true
+    },
+    {
+      "topic": "01 What is Redbelly?",
+      "claim": "Developed in partnership with CSIRO (and its Data61).",
+      "src": "wpPage",
+      "quote": "developed with The University of Sydney and CSIRO’s Data61",
+      "url": "https://redbelly.network/whitepaper",
+      "found": true
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "claim": "Tokenisation records ownership as digital tokens and lets the asset's rules be programmed.",
+      "src": "tkHome",
+      "quote": "Tokenisation records ownership of financial products and services as digital tokens, and lets you program the rules of the asset.",
+      "url": "https://tokeniser.com",
+      "found": true
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "claim": "Today: separate systems to reconcile; a (corporate) bond trade can take 2 to 4 business days to settle.",
+      "src": "task07",
+      "quote": "take two to four business days to settle, because the asset record, the payment instruction, and the legal documentation typically live on different systems operated by different institutions",
+      "url": "https://khalyd.substack.com/p/redbelly-network-and-the-rbas-project",
+      "found": true
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "claim": "Tokenised: one shared record.",
+      "src": "home",
+      "quote": "Establish digital registries as a shared source of truth across issuers, managers, and investors.",
+      "url": "https://redbelly.network",
+      "found": true
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "claim": "Tokenised: one record shared by every party in the value chain.",
+      "src": "wpPdf",
+      "quote": "using a verifiable, single source of truth across the entirety of the value chain",
+      "url": "https://redbelly.network/redbelly-network-whitepaper.pdf",
+      "found": true
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "claim": "Tokenised: asset and payment swap in one step.",
+      "src": "task07",
+      "quote": "a single atomic transaction can exchange both simultaneously",
+      "url": "https://khalyd.substack.com/p/redbelly-network-and-the-rbas-project",
+      "found": true
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "claim": "Today: manual checks, breaches often found late (after the trade).",
+      "src": "tkComp",
+      "quote": "Investor eligibility, holder limits and transfer restrictions are typically managed through spreadsheets, emails and manual sign-offs. Breaches are often identified after the trade",
+      "url": "https://tokeniser.com/product/superpowers/automated-compliance",
+      "found": true
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "claim": "Tokenised: checked before every trade.",
+      "src": "tkComp",
+      "quote": "each trade is checked against your fund's rules before execution",
+      "url": "https://tokeniser.com/product/superpowers/automated-compliance",
+      "found": true
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "claim": "Tokenised: lower investment thresholds.",
+      "src": "wpPdf",
+      "quote": "lowering investment thresholds",
+      "url": "https://redbelly.network/redbelly-network-whitepaper.pdf",
+      "found": true
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "claim": "Tokenised: fractions (fractional ownership), traded 24/7.",
+      "src": "tkHome",
+      "quote": "Holders gain fractional ownership, direct custody, atomic settlement, and 24/7 secondary trading through protocol finance.",
+      "url": "https://tokeniser.com",
+      "found": true
+    },
+    {
+      "topic": "03 DBFT consensus",
+      "claim": "DBFT stands for Democratic Byzantine Fault Tolerant consensus.",
+      "src": "wpPdf",
+      "quote": "Democratic Byzantine Fault Tolerant (DBFT) consensus",
+      "url": "https://redbelly.network/redbelly-network-whitepaper.pdf",
+      "found": true
+    },
+    {
+      "topic": "03 DBFT consensus",
+      "claim": "DBFT is leaderless.",
+      "src": "wpPdf",
+      "quote": "As a leaderless consensus algorithm, it eliminates single points of failure",
+      "url": "https://redbelly.network/redbelly-network-whitepaper.pdf",
+      "found": true
+    },
+    {
+      "topic": "03 DBFT consensus",
+      "claim": "Classical blockchains: nodes compete, one block wins, the rest is wasted.",
+      "src": "wpPdf",
+      "quote": "This is a waste of resources as only one participant succeeds and the rest fail.",
+      "url": "https://redbelly.network/redbelly-network-whitepaper.pdf",
+      "found": true
+    },
+    {
+      "topic": "03 DBFT consensus",
+      "claim": "DBFT: nodes cooperate and combine transactions into a superblock.",
+      "src": "wpPdf",
+      "quote": "combining distinct sets of transactions into a ‘superblock’ in a leaderless manner",
+      "url": "https://redbelly.network/redbelly-network-whitepaper.pdf",
+      "found": true
+    },
+    {
+      "topic": "03 DBFT consensus",
+      "claim": "Redbelly consensus is collaborative instead of competitive.",
+      "src": "wpPdf",
+      "quote": "Redbelly consensus is collaborative instead of competitive",
+      "url": "https://redbelly.network/redbelly-network-whitepaper.pdf",
+      "found": true
+    },
+    {
+      "topic": "03 DBFT consensus",
+      "claim": "No leader: every node plays a similar role.",
+      "src": "rsDbft",
+      "quote": "each node plays a similar role in the execution of the consensus",
+      "url": "https://redbelly.network/research/dbft-ef-cient-leaderless-byzantine-consensus",
+      "found": true
+    },
+    {
+      "topic": "03 DBFT consensus",
+      "claim": "No forks: once decided, a block is final.",
+      "src": "wpPdf",
+      "quote": "It cannot fork and has been mathematically proven to be correct through a process of formal verification through parameterised model checking",
+      "url": "https://redbelly.network/redbelly-network-whitepaper.pdf",
+      "found": true
+    },
+    {
+      "topic": "03 DBFT consensus",
+      "claim": "Fault tolerant: proven (by model checking) safe while fewer than 1 in 3 nodes are faulty.",
+      "src": "rsHolistic",
+      "quote": "for any number n of processes and any number f < n/3 of Byzantine processes",
+      "url": "https://redbelly.network/research/holistic-verification-of-blockchain-consensus",
+      "found": true
+    },
+    {
+      "topic": "03 DBFT consensus",
+      "claim": "Proven: the verification covers safety (and liveness) for any parameter.",
+      "src": "rsHolistic",
+      "quote": "we formally verify, for any parameter, not only the safety properties of the Redbelly Blockchain consensus but also its liveness",
+      "url": "https://redbelly.network/research/holistic-verification-of-blockchain-consensus",
+      "found": true
+    },
+    {
+      "topic": "04 Receptor",
+      "claim": "Receptor is Redbelly's native identity and verifiable credential protocol.",
+      "src": "receptor",
+      "quote": "Receptor is Redbelly's native digital identity and verifiable credential protocol.",
+      "url": "https://docs.redbelly.network/pages/receptor/",
+      "found": true
+    },
+    {
+      "topic": "04 Receptor",
+      "claim": "It makes sure everyone on the network is who they say they are.",
+      "src": "receptor",
+      "quote": "ensuring that all network participants are who they say they are",
+      "url": "https://docs.redbelly.network/pages/receptor/",
+      "found": true
+    },
+    {
+      "topic": "04 Receptor",
+      "claim": "Network access needs a credential from an accredited issuer.",
+      "src": "issuer",
+      "quote": "Only accredited issuers can issue credentials that give users network access.",
+      "url": "https://docs.redbelly.network/pages/modules/issuer/",
+      "found": true
+    },
+    {
+      "topic": "04 Receptor",
+      "claim": "Apps state who qualifies.",
+      "src": "receptor",
+      "quote": "helps use case developers to surface the eligibility criteria for their real world asset tokenisation use case",
+      "url": "https://docs.redbelly.network/pages/receptor/",
+      "found": true
+    },
+    {
+      "topic": "04 Receptor",
+      "claim": "Example criterion: accredited investor status.",
+      "src": "eligKit",
+      "quote": "proving their age, address, or accredited investor status",
+      "url": "https://docs.redbelly.network/pages/eligibility-sdk/overview/",
+      "found": true
+    },
+    {
+      "topic": "04 Receptor",
+      "claim": "Users prove they qualify without uploading documents.",
+      "src": "eligKit",
+      "quote": "Users can prove their eligibility without having to upload documents or share sensitive personal information with your platform.",
+      "url": "https://docs.redbelly.network/pages/eligibility-sdk/overview/",
+      "found": true
+    },
+    {
+      "topic": "04 Receptor",
+      "claim": "Built on the W3C verifiable credential data model.",
+      "src": "receptor",
+      "quote": "Receptor is built on the W3C verifiable credential data model",
+      "url": "https://docs.redbelly.network/pages/receptor/",
+      "found": true
+    },
+    {
+      "topic": "05 Verifiable credentials",
+      "claim": "Three roles: Issuer, Holder, Verifier.",
+      "src": "receptor",
+      "quote": "The framework is composed of three essential modules; the Issuer, the Holder, and the Verifier.",
+      "url": "https://docs.redbelly.network/pages/receptor/",
+      "found": true
+    },
+    {
+      "topic": "05 Verifiable credentials",
+      "claim": "The issuer issues the credential.",
+      "src": "receptor",
+      "quote": "Issuer: Use to define and issue verifiable credentials to users.",
+      "url": "https://docs.redbelly.network/pages/receptor/",
+      "found": true
+    },
+    {
+      "topic": "05 Verifiable credentials",
+      "claim": "The holder keeps it in a wallet.",
+      "src": "holder",
+      "quote": "acquire and store verifiable credentials",
+      "url": "https://docs.redbelly.network/pages/modules/holder/",
+      "found": true
+    },
+    {
+      "topic": "05 Verifiable credentials",
+      "claim": "The verifier checks the proof and the issuer's signature.",
+      "src": "eligKit",
+      "quote": "checks its mathematical validity against the trusted issuer's public key",
+      "url": "https://docs.redbelly.network/pages/eligibility-sdk/overview/",
+      "found": true
+    },
+    {
+      "topic": "05 Verifiable credentials",
+      "claim": "A cryptographic signature confirms authenticity.",
+      "src": "sdzk",
+      "quote": "along with a cryptographic signature, allowing them to confirm its authenticity",
+      "url": "https://docs.redbelly.network/pages/eligibility-sdk/selective-disclosure-vs-zero-knowledge/",
+      "found": true
+    },
+    {
+      "topic": "05 Verifiable credentials",
+      "claim": "Credentials are reusable.",
+      "src": "assetTok",
+      "quote": "Reusable client identity and KYC credentials streamline onboarding and reduce duplication",
+      "url": "https://redbelly.network/asset-tokenisation",
+      "found": true
+    },
+    {
+      "topic": "05 Verifiable credentials",
+      "claim": "Your data is not copied to every app (no duplicate stores of it).",
+      "src": "wpPdf",
+      "quote": "user data is kept at the edge and is not duplicated across each service provider which would create many honeypots of sensitive data",
+      "url": "https://redbelly.network/redbelly-network-whitepaper.pdf",
+      "found": true
+    },
+    {
+      "topic": "06 Zero knowledge proofs",
+      "claim": "A ZK proof shows something is true without revealing the data behind it.",
+      "src": "sdzk",
+      "quote": "uses zero-knowledge proofs, allow users to prove a statement is true without revealing any of the underlying data that makes it true",
+      "url": "https://docs.redbelly.network/pages/eligibility-sdk/selective-disclosure-vs-zero-knowledge/",
+      "found": true
+    },
+    {
+      "topic": "06 Zero knowledge proofs",
+      "claim": "Ask: an app asks one yes or no question (example on the artwork: over 18?).",
+      "src": "sdzk",
+      "quote": "The verifier asks a yes/no question using a query, like “Is the user over 18?”",
+      "url": "https://docs.redbelly.network/pages/eligibility-sdk/selective-disclosure-vs-zero-knowledge/",
+      "found": true
+    },
+    {
+      "topic": "06 Zero knowledge proofs",
+      "claim": "Prove: your wallet proves it (generates the proof); nothing is revealed.",
+      "src": "sdzk",
+      "quote": "The user's wallet generates a cryptographic proof that they satisfy the query, without revealing their address or any other personal information.",
+      "url": "https://docs.redbelly.network/pages/eligibility-sdk/selective-disclosure-vs-zero-knowledge/",
+      "found": true
+    },
+    {
+      "topic": "06 Zero knowledge proofs",
+      "claim": "Artwork: the passport credential's fields stay hidden; the birth date is queried, not revealed.",
+      "src": "pbq",
+      "quote": "can be queried against a relative date, rather than being revealed",
+      "url": "https://docs.redbelly.network/pages/methods/proof-by-query/",
+      "found": true
+    },
+    {
+      "topic": "06 Zero knowledge proofs",
+      "claim": "Check: a smart contract on Redbelly verifies it.",
+      "src": "sdzk",
+      "quote": "where a smart contract verifies its validity",
+      "url": "https://docs.redbelly.network/pages/eligibility-sdk/selective-disclosure-vs-zero-knowledge/",
+      "found": true
+    },
+    {
+      "topic": "06 Zero knowledge proofs",
+      "claim": "Artwork: the result is true or false, with no personal data on chain.",
+      "src": "sdzk",
+      "quote": "with no personal data ever being exposed on-chain",
+      "url": "https://docs.redbelly.network/pages/eligibility-sdk/selective-disclosure-vs-zero-knowledge/",
+      "found": true
+    },
+    {
+      "topic": "06 Zero knowledge proofs",
+      "claim": "Selective disclosure reveals only the fields asked for.",
+      "src": "sdzk",
+      "quote": "Selective Disclosure (SD) is a method where a user reveal only specific fields from their credential to a verifier.",
+      "url": "https://docs.redbelly.network/pages/eligibility-sdk/selective-disclosure-vs-zero-knowledge/",
+      "found": true
+    },
+    {
+      "topic": "06 Zero knowledge proofs",
+      "claim": "Zero knowledge reveals no data, only the proof.",
+      "src": "sdzk",
+      "quote": "In SD, data is revealed. In PBQ, only the proof is shared",
+      "url": "https://docs.redbelly.network/pages/eligibility-sdk/selective-disclosure-vs-zero-knowledge/",
+      "found": true
+    },
+    {
+      "topic": "07 Tokeniser",
+      "claim": "Tokeniser is a Redbelly Network project.",
+      "src": "tkHome",
+      "quote": "Tokeniser is a Redbelly Network project",
+      "url": "https://tokeniser.com",
+      "found": true
+    },
+    {
+      "topic": "07 Tokeniser",
+      "claim": "It runs on Redbelly Network.",
+      "src": "tkHome",
+      "quote": "Tokeniser operates on Redbelly Network",
+      "url": "https://tokeniser.com",
+      "found": true
+    },
+    {
+      "topic": "07 Tokeniser",
+      "claim": "Registry, investor portal and API.",
+      "src": "tkProduct",
+      "quote": "Program the rules of your asset, with admin tools, an investor portal, and an API for automations and build-your-own portals.",
+      "url": "https://tokeniser.com/product",
+      "found": true
+    },
+    {
+      "topic": "07 Tokeniser",
+      "claim": "For funds, shares (equities), loans and notes.",
+      "src": "tkProduct",
+      "quote": "End-to-end management of funds, equities, loans and notes.",
+      "url": "https://tokeniser.com/product",
+      "found": true
+    },
+    {
+      "topic": "07 Tokeniser",
+      "claim": "Stack: Tokeniser issues, Averer reaches, Redbelly Network settles.",
+      "src": "tkTech",
+      "quote": "Compliant issuance and lifecycle of tokenised assets.",
+      "url": "https://tokeniser.com/technology",
+      "found": true
+    },
+    {
+      "topic": "07 Tokeniser",
+      "claim": "Averer: identity and wallet; credentials gate every holder.",
+      "src": "tkTech",
+      "quote": "Identity and the AI-native wallet. Verifiable credentials gate every holder",
+      "url": "https://tokeniser.com/technology",
+      "found": true
+    },
+    {
+      "topic": "07 Tokeniser",
+      "claim": "Redbelly Network settles; final the moment it completes.",
+      "src": "tkTech",
+      "quote": "final the moment it completes",
+      "url": "https://tokeniser.com/technology",
+      "found": true
+    },
+    {
+      "topic": "07 Tokeniser",
+      "claim": "Every holder verified and every transfer checked, automatically.",
+      "src": "tkHome",
+      "quote": "Every holder is verified and every transfer checked against the asset's rules, automatically.",
+      "url": "https://tokeniser.com",
+      "found": true
+    },
+    {
+      "topic": "08 Compliance aware assets",
+      "claim": "An asset can carry its own rules (compliance becomes a property of the asset).",
+      "src": "wpPdf",
+      "quote": "This transforms the complexity of compliance assurance into an inherent property of the assets themselves.",
+      "url": "https://redbelly.network/redbelly-network-whitepaper.pdf",
+      "found": true
+    },
+    {
+      "topic": "08 Compliance aware assets",
+      "claim": "Only eligible parties can hold the token.",
+      "src": "wpPdf",
+      "quote": "only parties that can prove their eligibility will be able to hold the token",
+      "url": "https://redbelly.network/redbelly-network-whitepaper.pdf",
+      "found": true
+    },
+    {
+      "topic": "08 Compliance aware assets",
+      "claim": "Checks: identity, eligibility and limits, before the trade. Failing trades do not proceed. Every check is logged.",
+      "src": "tkComp",
+      "quote": "Before any trade proceeds, the investor's identity, eligibility (including wholesale or sophisticated status where required) and your limits are verified automatically. Trades that fail a check do not proceed, and every check is logged.",
+      "url": "https://tokeniser.com/product/superpowers/automated-compliance",
+      "found": true
+    },
+    {
+      "topic": "08 Compliance aware assets",
+      "claim": "Eligibility is enforced at the point of trade.",
+      "src": "assetTok",
+      "quote": "defined investor eligibility, enforced at the point of trade",
+      "url": "https://redbelly.network/asset-tokenisation",
+      "found": true
+    },
+    {
+      "topic": "08 Compliance aware assets",
+      "claim": "Set by the issuer in line with its licence and mandate.",
+      "src": "wpPdf",
+      "quote": "embed turnkey jurisdictional compliance, according to their license and mandate, into their tokenised assets directly",
+      "url": "https://redbelly.network/redbelly-network-whitepaper.pdf",
+      "found": true
+    },
+    {
+      "topic": "08 Compliance aware assets",
+      "claim": "Rules carry over when assets meet other apps on the network.",
+      "src": "wpPdf",
+      "quote": "when different tokenised assets and protocols interact on our network, they automatically inherit the compliance properties of the underlying assets",
+      "url": "https://redbelly.network/redbelly-network-whitepaper.pdf",
+      "found": true
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "claim": "Every participant is known.",
+      "src": "wpPage",
+      "quote": "an innovative identity layer that ensures all network participants are known",
+      "url": "https://redbelly.network/whitepaper",
+      "found": true
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "claim": "A node that cheats leaves proof it cannot deny.",
+      "src": "wpPdf",
+      "quote": "Think of these as digital fingerprints that cannot be denied.",
+      "url": "https://redbelly.network/redbelly-network-whitepaper.pdf",
+      "found": true
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "claim": "Participants are verified by accredited credential issuers.",
+      "src": "wpPdf",
+      "quote": "We enforce mandatory identity verification for all network participants through our marketplace of accredited verifiable credential issuers.",
+      "url": "https://redbelly.network/redbelly-network-whitepaper.pdf",
+      "found": true
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "claim": "Each transaction ties back to a responsible party.",
+      "src": "wpPdf",
+      "quote": "all transactions can be tied back to a responsible entity",
+      "url": "https://redbelly.network/redbelly-network-whitepaper.pdf",
+      "found": true
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "claim": "Accountability at protocol level through proofs of fraud (Polygraph) and an identity layer.",
+      "src": "wpPage",
+      "quote": "Accountability is enforced at a protocol level through a novel mechanism that constructs undeniable proofs of fraud",
+      "url": "https://redbelly.network/whitepaper",
+      "found": true
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "claim": "A cheating node leaves signed traces that become proof of fraud.",
+      "src": "wpPdf",
+      "quote": "they leave cryptographically signed traces that honest nodes can combine to build undeniable proofs of fraud",
+      "url": "https://redbelly.network/redbelly-network-whitepaper.pdf",
+      "found": true
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "claim": "Faulty nodes are removed from consensus.",
+      "src": "wpPdf",
+      "quote": "an exclusion protocol to remove the identified faulty nodes from the consensus committee",
+      "url": "https://redbelly.network/redbelly-network-whitepaper.pdf",
+      "found": true
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "claim": "Polygraph is the first accountable Byzantine consensus algorithm.",
+      "src": "research",
+      "quote": "Polygraph, the first accountable Byzantine consensus algorithm",
+      "url": "https://redbelly.network/research",
+      "found": true
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "claim": "Identities are verified while ZK proofs keep personal data private.",
+      "src": "acacia",
+      "quote": "Participants verify their identities, but their privacy remains protected through zero-knowledge proofs.",
+      "url": "https://redbelly.network/projectacacia",
+      "found": true
+    },
+    {
+      "topic": "10 Governance",
+      "claim": "The DAO decides by vote on its own platform.",
+      "src": "voteList",
+      "quote": "Signature voting on Redbelly. No gas, no subscription.",
+      "url": "https://redbelly-governance.vercel.app/proposals",
+      "found": true
+    },
+    {
+      "topic": "10 Governance",
+      "claim": "Only identity verified wallets can vote.",
+      "src": "vote",
+      "quote": "Every address here clears Redbelly’s passport-backed identity check.",
+      "url": "https://redbelly-governance.vercel.app/",
+      "found": true
+    },
+    {
+      "topic": "10 Governance",
+      "claim": "Verified wallets hold a Receptor credential.",
+      "src": "voteCreate",
+      "quote": "Only wallets holding a Receptor credential can vote, as Redbelly requires one for network access.",
+      "url": "https://redbelly-governance.vercel.app/create",
+      "found": true
+    },
+    {
+      "topic": "10 Governance",
+      "claim": "Propose: posted on the platform, locked (cannot be edited) once open.",
+      "src": "voteCreate",
+      "quote": "a proposal cannot be edited once it is open",
+      "url": "https://redbelly-governance.vercel.app/create",
+      "found": true
+    },
+    {
+      "topic": "10 Governance",
+      "claim": "Voting is signing a message: no transaction, no gas.",
+      "src": "voteSafety",
+      "quote": "you sign a message, you never send a transaction",
+      "url": "https://redbelly-governance.vercel.app/safety",
+      "found": true
+    },
+    {
+      "topic": "10 Governance",
+      "claim": "Voting costs no gas.",
+      "src": "voteSafety",
+      "quote": "Voting here costs no gas because nothing is ever sent to the chain.",
+      "url": "https://redbelly-governance.vercel.app/safety",
+      "found": true
+    },
+    {
+      "topic": "10 Governance",
+      "claim": "Voting power can be RBNT held.",
+      "src": "voteCreate",
+      "quote": "Voting power equals the native RBNT held at the snapshot block.",
+      "url": "https://redbelly-governance.vercel.app/create",
+      "found": true
+    },
+    {
+      "topic": "10 Governance",
+      "claim": "Or one vote per verified address.",
+      "src": "voteOpov",
+      "quote": "One verified address, one vote",
+      "url": "https://redbelly-governance.vercel.app/proposal/13eebe46-d2e2-4fd2-9f18-1e202d3dce36",
+      "found": true
+    },
+    {
+      "topic": "10 Governance",
+      "claim": "Check: signed ballots anyone can re-check.",
+      "src": "voteSafety",
+      "quote": "Your signature is stored with your ballot, so anyone can re-verify that your vote was really yours without trusting this server.",
+      "url": "https://redbelly-governance.vercel.app/safety",
+      "found": true
+    },
+    {
+      "topic": "10 Governance",
+      "claim": "High Council: 3 seats elected July 2026.",
+      "src": "task23",
+      "quote": "The High Council seats elected in July 2026",
+      "url": "https://redbelly.smartcodedbot.com/changelog/",
+      "found": true
+    },
+    {
+      "topic": "10 Governance",
+      "claim": "Five pods (working groups).",
+      "src": "task23",
+      "quote": "Five pods: Marketing, Builder/Develop, Researcher, Community and Partnerships.",
+      "url": "https://redbelly.smartcodedbot.com/changelog/",
+      "found": true
+    },
+    {
+      "topic": "10 Governance",
+      "claim": "Treasury: new funding (new treasury-funded initiatives) paused until a future vote resumes it.",
+      "src": "task23",
+      "quote": "New treasury-funded initiatives are suspended until a future governance vote resumes them. Existing approved obligations continue.",
+      "url": "https://redbelly.smartcodedbot.com/changelog/",
+      "found": true
+    },
+    {
+      "topic": "10 Governance",
+      "claim": "Past Snapshot votes are imported on the platform.",
+      "src": "voteImported",
+      "quote": "IMPORTED FROM SNAPSHOT",
+      "url": "https://redbelly-governance.vercel.app/proposal/5f0845f0-7bc3-4db7-a79e-0fdb74613c1f",
+      "found": true
+    },
+    {
+      "topic": "11 Project Acacia",
+      "claim": "Project Acacia: RBA and DFCRC real money pilot on tokenised money and assets.",
+      "src": "task07",
+      "quote": "a real-money pilot examining how tokenised money and assets could improve Australia’s wholesale financial markets",
+      "url": "https://khalyd.substack.com/p/redbelly-network-and-the-rbas-project",
+      "found": true
+    },
+    {
+      "topic": "11 Project Acacia",
+      "claim": "The RBA issued its pilot wholesale CBDC onto 3 platforms; Redbelly was the only public one.",
+      "src": "task07",
+      "quote": "Of the three platforms onto which the RBA actually issued its pilot wholesale central bank digital currency (wCBDC), Redbelly was the only one built on public, generally accessible infrastructure",
+      "url": "https://khalyd.substack.com/p/redbelly-network-and-the-rbas-project",
+      "found": true
+    },
+    {
+      "topic": "11 Project Acacia",
+      "claim": "5 of the 20 completed use cases ran on Redbelly's mainnet.",
+      "src": "task07",
+      "quote": "used Redbelly’s mainnet across five of the twenty completed use cases",
+      "url": "https://khalyd.substack.com/p/redbelly-network-and-the-rbas-project",
+      "found": true
+    },
+    {
+      "topic": "11 Project Acacia",
+      "claim": "Australia's first tokenised corporate bond.",
+      "src": "task07",
+      "quote": "Imperium Markets issued CLIFFO Series 1, Australia’s first tokenised corporate bond",
+      "url": "https://khalyd.substack.com/p/redbelly-network-and-the-rbas-project",
+      "found": true
+    },
+    {
+      "topic": "11 Project Acacia",
+      "claim": "Issued and resold on Redbelly in under 4 minutes.",
+      "src": "task07",
+      "quote": "issuance, coupon registration, and the secondary transfer completed end-to-end in under four minutes on Redbelly",
+      "url": "https://khalyd.substack.com/p/redbelly-network-and-the-rbas-project",
+      "found": true
+    },
+    {
+      "topic": "11 Project Acacia",
+      "claim": "Normally up to 4 days.",
+      "src": "task07",
+      "quote": "would conventionally have taken up to four days",
+      "url": "https://khalyd.substack.com/p/redbelly-network-and-the-rbas-project",
+      "found": true
+    },
+    {
+      "topic": "11 Project Acacia",
+      "claim": "Timeline: participants announced July 2025; testing to February 2026.",
+      "src": "task07",
+      "quote": "ran from July 2025 (when participants were announced) through February 2026",
+      "url": "https://khalyd.substack.com/p/redbelly-network-and-the-rbas-project",
+      "found": true
+    },
+    {
+      "topic": "11 Project Acacia",
+      "claim": "RBA final report: May 2026.",
+      "src": "task07",
+      "quote": "the RBA’s May 2026 Final Report",
+      "url": "https://khalyd.substack.com/p/redbelly-network-and-the-rbas-project",
+      "found": true
+    },
+    {
+      "topic": "11 Project Acacia",
+      "claim": "The RBA minted pilot wholesale CBDC onto the Redbelly mainnet.",
+      "src": "acacia",
+      "quote": "The RBA will mint a limited amount of wholesale CBDC directly onto the Redbelly mainnet",
+      "url": "https://redbelly.network/projectacacia",
+      "found": true
+    }
+  ]
+}

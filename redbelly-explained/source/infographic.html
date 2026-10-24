@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Redbelly Explained: source view</title>
+<link rel="stylesheet" href="src/tokens.css">
+<link rel="stylesheet" href="src/series.css">
+<style>
+  /* Source view only: a picker shown when no topic is chosen. */
+  .pick { padding: 32px; font: 16px/1.5 "Be Vietnam Pro", system-ui, sans-serif; color: #f1f5f8; }
+  .pick h1 { font-size: 22px; margin-bottom: 12px; }
+  .pick p { color: #c2ced6; margin-bottom: 16px; max-width: 60ch; }
+  .pick table { border-collapse: collapse; }
+  .pick td { padding: 6px 14px 6px 0; border-bottom: 1px solid #263641; }
+  .pick a { color: #ffb3ae; text-decoration: none; margin-right: 12px; }
+</style>
+</head>
+<body>
+<main id="canvas" class="canvas"></main>
+<script src="src/icons.js"></script>
+<script src="src/topics.js"></script>
+<script src="src/build.js"></script>
+<script>
+  (function () {
+    var q = new URLSearchParams(location.search);
+    var fmt = q.get("f");
+    if (!q.get("t") || ["landscape", "portrait", "square"].indexOf(fmt) < 0) {
+      var rows = RX.topics.map(function (t) {
+        var n = (t.n < 10 ? "0" : "") + t.n;
+        return "<tr><td>" + n + "</td><td>" + t.title + "</td><td>" +
+          ["landscape", "portrait", "square"].map(function (f) {
+            return '<a href="?t=' + t.slug + "&f=" + f + '">' + f + "</a>";
+          }).join("") + "</td></tr>";
+      }).join("");
+      var c = document.getElementById("canvas");
+      c.className = "pick";
+      c.innerHTML = "<h1>Redbelly Explained: source view</h1><p>Each link builds one infographic live from src/topics.js. " +
+        "Edit the words there and reload, or run npm run render to rebuild the PNGs.</p><table>" + rows + "</table>";
+      return;
+    }
+    RX.build(RX.find(q.get("t")), fmt);
+  })();
+</script>
+</body>
+</html>
