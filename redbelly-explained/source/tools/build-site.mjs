@@ -151,7 +151,8 @@ function page(title, description, body, extraHead = "") {
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:image" content="png/16x9/${id(RX.topics[0])}.png">
 <meta name="theme-color" content="#0c1317">
-<link rel="icon" href="source/brand/dao-logo-on-dark-600.png">
+<link rel="icon" type="image/png" sizes="512x512" href="source/brand/dao-favicon-512.png">
+<link rel="apple-touch-icon" href="source/brand/dao-favicon-180.png">
 ${extraHead}<style>${SITE_CSS}</style>
 </head>
 <body data-format="1x1">
