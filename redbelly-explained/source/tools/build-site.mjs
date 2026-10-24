@@ -88,6 +88,9 @@ a:hover{text-decoration:underline}
 .rail{display:grid;grid-template-columns:repeat(11,1fr);gap:5px;padding-top:28px}
 .rail i{height:4px;border-radius:2px;background:var(--red)}
 header.top{padding-bottom:28px;border-bottom:1px solid var(--edge)}
+.brandrow{display:flex;align-items:center;gap:14px;margin-top:22px}
+.brandrow .eyebrow{margin-top:0}
+.mark{display:block;height:48px;width:auto;flex:none}
 .eyebrow{margin-top:22px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--t3)}
 h1{margin-top:8px;font-size:clamp(34px,6vw,56px);line-height:1.04;letter-spacing:-.02em}
 .intro{margin-top:14px;max-width:62ch;font-size:18px;color:var(--t2)}
@@ -180,7 +183,7 @@ function gallery(stats) {
 
   const body = `<header class="top"><div class="wrap">
   <div class="rail" aria-hidden="true">${"<i></i>".repeat(11)}</div>
-  <p class="eyebrow">Redbelly DAO / Start Here</p>
+  <div class="brandrow"><img class="mark" src="source/brand/dao-logo-on-dark-600.png" alt="Redbelly DAO" width="67" height="48"><p class="eyebrow">Redbelly DAO / Start Here</p></div>
   <h1>Redbelly Explained</h1>
   <p class="intro">Eleven infographics that explain Redbelly’s core ideas in plain language, one idea each. Every one comes in three formats: 16:9 for the web and X, 4:5 for phone feeds, and 1:1 for Discord and pins.</p>
   <div class="bar">
@@ -260,7 +263,7 @@ ${t.facts.map(f => `<tr><td>${esc(f.claim)}</td><td><a href="${esc(RX.src[f.src]
 </tbody></table></section>`).join("\n");
   const body = `<header class="top"><div class="wrap">
   <div class="rail" aria-hidden="true">${"<i></i>".repeat(11)}</div>
-  <p class="eyebrow">Redbelly Explained</p>
+  <div class="brandrow"><img class="mark" src="source/brand/dao-logo-on-dark-600.png" alt="Redbelly DAO" width="67" height="48"><p class="eyebrow">Redbelly Explained</p></div>
   <h1>Sources</h1>
   <p class="intro">Every fact printed on the 11 infographics, the page it comes from and a quote from that page that supports it. All quotes were found on the live pages on ${esc(RX.verified)}. Only the resources supplied with the task were used.</p>
   <div class="bar"><a href="index.html">Back to the infographics</a><a href="SOURCES.md">Markdown version</a></div>
@@ -294,7 +297,7 @@ function reportPage(md, title) {
   }
   const body = `<header class="top"><div class="wrap">
   <div class="rail" aria-hidden="true">${"<i></i>".repeat(11)}</div>
-  <p class="eyebrow">Redbelly Explained / Verification</p>
+  <div class="brandrow"><img class="mark" src="../source/brand/dao-logo-on-dark-600.png" alt="Redbelly DAO" width="67" height="48"><p class="eyebrow">Redbelly Explained / Verification</p></div>
   <h1>${esc(title)}</h1>
   <div class="bar"><a href="../index.html#checks">Back to the infographics</a></div>
 </div></header>
