@@ -44,8 +44,10 @@ Each file name exists in all three PNG folders and all three SVG folders.
 
 The site is static. There is no build step and `index.html` is at the root.
 
-1. Unzip `redbelly-explained.zip`.
-2. Either run `npx vercel deploy --prod` inside the `redbelly-explained` folder, or push the folder to a Git repository and import it in Vercel with Framework Preset "Other", no build command and the root as the output directory.
+1. Import this repository in Vercel.
+2. Set **Root Directory** to `redbelly-explained`, Framework Preset to "Other", and leave the build command and output directory empty.
+
+Or run `npx vercel deploy --prod` inside the `redbelly-explained` folder.
 
 The gallery shows every infographic in the format you pick, opens any image full size, links every PNG and SVG for download, offers all 33 PNGs in one zip, and has a source list and a plain text version of each infographic (useful as alt text when posting).
 

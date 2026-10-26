@@ -1,99 +1,223 @@
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="redbelly-explained/source/brand/dao-logo-on-dark-600.png">
+  <img src="redbelly-explained/source/brand/dao-logo-on-light.png" alt="Redbelly DAO" width="120">
+</picture>
+
 # Redbelly Explained
 
-Eleven infographics that explain Redbelly's core ideas in plain language, one idea each, for the Redbelly DAO Start Here hub, the DAO website, Discord and X. Every infographic comes in three formats:
+**Eleven educational infographics that explain Redbelly's core ideas in plain language, one idea each.**
 
-| Format | Size | Good for |
-| --- | --- | --- |
-| 16:9 | 1920 x 1080 PNG | website, X cards, slides |
-| 4:5 | 1080 x 1350 PNG | phone feeds |
-| 1:1 | 1080 x 1080 PNG | Discord, pins, X |
+Made for the Redbelly DAO Start Here hub, the DAO website, Discord and X.
 
+[**Live gallery**](https://redbelly-network-infographics.vercel.app/) ·
+[**Download all 33 PNGs**](redbelly-explained/assets/redbelly-explained-png.zip) ·
+[**Source list**](redbelly-explained/SOURCES.md) ·
+[**Verification reports**](redbelly-explained/verification/)
 
-## What is in this folder
+![Infographics](https://img.shields.io/badge/infographics-11-EF5350?style=flat-square)
+![Formats](https://img.shields.io/badge/formats-16%3A9%20%C2%B7%204%3A5%20%C2%B7%201%3A1-37474F?style=flat-square)
+![Sources](https://img.shields.io/badge/source%20quotes-96%2F96%20verified-2E7D32?style=flat-square)
+![Layouts](https://img.shields.io/badge/layout%20checks-33%2F33%20pass-2E7D32?style=flat-square)
 
-| Path | What it is |
+<br>
+
+<img src="redbelly-explained/assets/overview.png" alt="All 11 Redbelly Explained infographics at a glance" width="100%">
+
+</div>
+
+---
+
+## Contents
+
+- [The series](#the-series)
+- [Formats](#formats)
+- [Deliverables at a glance](#deliverables-at-a-glance)
+- [Repository structure](#repository-structure)
+- [Accuracy and sources](#accuracy-and-sources)
+- [Verification](#verification)
+- [Edit and rebuild](#edit-and-rebuild)
+- [Design system](#design-system)
+- [Licences](#licences)
+
+## The series
+
+Each infographic answers one question a newcomer asks, so they get it in under a minute. Click any image to open it full size, or use the links under it for each format.
+
+<table>
+  <tr>
+    <td align="center" width="33%" valign="top">
+      <a href="redbelly-explained/png/1x1/01-what-is-redbelly.png"><img src="redbelly-explained/png/1x1/01-what-is-redbelly.png" alt="01 What is Redbelly?" width="260"></a><br>
+      <sub><b>01 · What is Redbelly?</b></sub><br>
+      <sub><a href="redbelly-explained/png/16x9/01-what-is-redbelly.png">16:9</a> · <a href="redbelly-explained/png/4x5/01-what-is-redbelly.png">4:5</a> · <a href="redbelly-explained/png/1x1/01-what-is-redbelly.png">1:1</a> · <a href="redbelly-explained/svg/16x9/01-what-is-redbelly.svg">SVG</a></sub>
+    </td>
+    <td align="center" width="33%" valign="top">
+      <a href="redbelly-explained/png/1x1/02-why-tokenise-real-world-assets.png"><img src="redbelly-explained/png/1x1/02-why-tokenise-real-world-assets.png" alt="02 Why tokenise real world assets?" width="260"></a><br>
+      <sub><b>02 · Why tokenise real world assets?</b></sub><br>
+      <sub><a href="redbelly-explained/png/16x9/02-why-tokenise-real-world-assets.png">16:9</a> · <a href="redbelly-explained/png/4x5/02-why-tokenise-real-world-assets.png">4:5</a> · <a href="redbelly-explained/png/1x1/02-why-tokenise-real-world-assets.png">1:1</a> · <a href="redbelly-explained/svg/16x9/02-why-tokenise-real-world-assets.svg">SVG</a></sub>
+    </td>
+    <td align="center" width="33%" valign="top">
+      <a href="redbelly-explained/png/1x1/03-dbft-consensus.png"><img src="redbelly-explained/png/1x1/03-dbft-consensus.png" alt="03 DBFT consensus" width="260"></a><br>
+      <sub><b>03 · DBFT consensus</b></sub><br>
+      <sub><a href="redbelly-explained/png/16x9/03-dbft-consensus.png">16:9</a> · <a href="redbelly-explained/png/4x5/03-dbft-consensus.png">4:5</a> · <a href="redbelly-explained/png/1x1/03-dbft-consensus.png">1:1</a> · <a href="redbelly-explained/svg/16x9/03-dbft-consensus.svg">SVG</a></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="33%" valign="top">
+      <a href="redbelly-explained/png/1x1/04-receptor.png"><img src="redbelly-explained/png/1x1/04-receptor.png" alt="04 Receptor" width="260"></a><br>
+      <sub><b>04 · Receptor</b></sub><br>
+      <sub><a href="redbelly-explained/png/16x9/04-receptor.png">16:9</a> · <a href="redbelly-explained/png/4x5/04-receptor.png">4:5</a> · <a href="redbelly-explained/png/1x1/04-receptor.png">1:1</a> · <a href="redbelly-explained/svg/16x9/04-receptor.svg">SVG</a></sub>
+    </td>
+    <td align="center" width="33%" valign="top">
+      <a href="redbelly-explained/png/1x1/05-verifiable-credentials.png"><img src="redbelly-explained/png/1x1/05-verifiable-credentials.png" alt="05 Verifiable credentials" width="260"></a><br>
+      <sub><b>05 · Verifiable credentials</b></sub><br>
+      <sub><a href="redbelly-explained/png/16x9/05-verifiable-credentials.png">16:9</a> · <a href="redbelly-explained/png/4x5/05-verifiable-credentials.png">4:5</a> · <a href="redbelly-explained/png/1x1/05-verifiable-credentials.png">1:1</a> · <a href="redbelly-explained/svg/16x9/05-verifiable-credentials.svg">SVG</a></sub>
+    </td>
+    <td align="center" width="33%" valign="top">
+      <a href="redbelly-explained/png/1x1/06-zk-proofs.png"><img src="redbelly-explained/png/1x1/06-zk-proofs.png" alt="06 Zero knowledge proofs" width="260"></a><br>
+      <sub><b>06 · Zero knowledge proofs</b></sub><br>
+      <sub><a href="redbelly-explained/png/16x9/06-zk-proofs.png">16:9</a> · <a href="redbelly-explained/png/4x5/06-zk-proofs.png">4:5</a> · <a href="redbelly-explained/png/1x1/06-zk-proofs.png">1:1</a> · <a href="redbelly-explained/svg/16x9/06-zk-proofs.svg">SVG</a></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="33%" valign="top">
+      <a href="redbelly-explained/png/1x1/07-tokeniser.png"><img src="redbelly-explained/png/1x1/07-tokeniser.png" alt="07 Tokeniser" width="260"></a><br>
+      <sub><b>07 · Tokeniser</b></sub><br>
+      <sub><a href="redbelly-explained/png/16x9/07-tokeniser.png">16:9</a> · <a href="redbelly-explained/png/4x5/07-tokeniser.png">4:5</a> · <a href="redbelly-explained/png/1x1/07-tokeniser.png">1:1</a> · <a href="redbelly-explained/svg/16x9/07-tokeniser.svg">SVG</a></sub>
+    </td>
+    <td align="center" width="33%" valign="top">
+      <a href="redbelly-explained/png/1x1/08-compliance-aware-assets.png"><img src="redbelly-explained/png/1x1/08-compliance-aware-assets.png" alt="08 Compliance aware assets" width="260"></a><br>
+      <sub><b>08 · Compliance aware assets</b></sub><br>
+      <sub><a href="redbelly-explained/png/16x9/08-compliance-aware-assets.png">16:9</a> · <a href="redbelly-explained/png/4x5/08-compliance-aware-assets.png">4:5</a> · <a href="redbelly-explained/png/1x1/08-compliance-aware-assets.png">1:1</a> · <a href="redbelly-explained/svg/16x9/08-compliance-aware-assets.svg">SVG</a></sub>
+    </td>
+    <td align="center" width="33%" valign="top">
+      <a href="redbelly-explained/png/1x1/09-identity-and-accountability.png"><img src="redbelly-explained/png/1x1/09-identity-and-accountability.png" alt="09 Identity and accountability" width="260"></a><br>
+      <sub><b>09 · Identity and accountability</b></sub><br>
+      <sub><a href="redbelly-explained/png/16x9/09-identity-and-accountability.png">16:9</a> · <a href="redbelly-explained/png/4x5/09-identity-and-accountability.png">4:5</a> · <a href="redbelly-explained/png/1x1/09-identity-and-accountability.png">1:1</a> · <a href="redbelly-explained/svg/16x9/09-identity-and-accountability.svg">SVG</a></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="33%" valign="top">
+      <a href="redbelly-explained/png/1x1/10-governance.png"><img src="redbelly-explained/png/1x1/10-governance.png" alt="10 Governance" width="260"></a><br>
+      <sub><b>10 · Governance</b></sub><br>
+      <sub><a href="redbelly-explained/png/16x9/10-governance.png">16:9</a> · <a href="redbelly-explained/png/4x5/10-governance.png">4:5</a> · <a href="redbelly-explained/png/1x1/10-governance.png">1:1</a> · <a href="redbelly-explained/svg/16x9/10-governance.svg">SVG</a></sub>
+    </td>
+    <td align="center" width="33%" valign="top">
+      <a href="redbelly-explained/png/1x1/11-project-acacia.png"><img src="redbelly-explained/png/1x1/11-project-acacia.png" alt="11 Project Acacia" width="260"></a><br>
+      <sub><b>11 · Project Acacia</b></sub><br>
+      <sub><a href="redbelly-explained/png/16x9/11-project-acacia.png">16:9</a> · <a href="redbelly-explained/png/4x5/11-project-acacia.png">4:5</a> · <a href="redbelly-explained/png/1x1/11-project-acacia.png">1:1</a> · <a href="redbelly-explained/svg/16x9/11-project-acacia.svg">SVG</a></sub>
+    </td>
+  </tr>
+</table>
+
+| No. | Topic | The one idea |
+| :-: | --- | --- |
+| 01 | What is Redbelly? | A public layer 1 blockchain built for tokenising real world assets. |
+| 02 | Why tokenise real world assets? | A token records who owns an asset and carries its rules. Today versus tokenised. |
+| 03 | DBFT consensus | Nodes agree on blocks together, with no leader, so blocks are final. |
+| 04 | Receptor | Redbelly's identity protocol: lets verified users in, sets rules, proves you qualify. |
+| 05 | Verifiable credentials | Issuer, holder and verifier: a signed proof you keep and share. |
+| 06 | Zero knowledge proofs | Prove something is true without revealing the data. |
+| 07 | Tokeniser | The Redbelly Network project funds and companies use to issue and manage tokenised assets. |
+| 08 | Compliance aware assets | An asset carries its own rules and every transfer is checked against them. |
+| 09 | Identity and accountability | Every participant is known, and a node that cheats leaves proof. |
+| 10 | Governance | How the Redbelly Community DAO decides today, on its own voting platform. |
+| 11 | Project Acacia | The RBA and DFCRC real money pilot, and Redbelly's part in it. |
+
+## Formats
+
+Every infographic is delivered in all three formats, as PNG and as editable SVG with live text.
+
+| Format | Size | Best for | PNG | SVG |
+| --- | --- | --- | --- | --- |
+| 16:9 landscape | 1920 × 1080 | Website, X cards, slides | [`png/16x9`](redbelly-explained/png/16x9) | [`svg/16x9`](redbelly-explained/svg/16x9) |
+| 4:5 portrait | 1080 × 1350 | Phone feeds | [`png/4x5`](redbelly-explained/png/4x5) | [`svg/4x5`](redbelly-explained/svg/4x5) |
+| 1:1 square | 1080 × 1080 | Discord, pins, X | [`png/1x1`](redbelly-explained/png/1x1) | [`svg/1x1`](redbelly-explained/svg/1x1) |
+
+Each file name (for example `10-governance`) exists in all three PNG folders and all three SVG folders.
+
+## Deliverables at a glance
+
+| Required deliverable | Where to find it |
 | --- | --- |
-| `index.html` | The gallery page. This is the site root for Vercel. |
-| `png/16x9`, `png/4x5`, `png/1x1` | The 33 finished PNGs. |
-| `svg/16x9`, `svg/4x5`, `svg/1x1` | The same 33 designs as editable SVG with live text. |
-| `source/` | Editable source: words, styles, icons and the scripts that build and check everything. |
-| `SOURCES.md` and `sources.html` | The source list: every fact on every infographic, its page and a supporting quote. |
-| `verification/` | Reports from the checks below, as Markdown, HTML and JSON. |
-| `assets/` | `overview.png` (all 11 at a glance) and `redbelly-explained-png.zip` (all 33 PNGs). |
+| 11 infographics × 3 formats (33 images) | [`png/`](redbelly-explained/png) · [zip of all 33](redbelly-explained/assets/redbelly-explained-png.zip) |
+| Editable source files | [`svg/`](redbelly-explained/svg) (open in Figma, Illustrator or Inkscape) and [`source/`](redbelly-explained/source) (HTML, CSS and build scripts) |
+| Source list for every infographic | [`SOURCES.md`](redbelly-explained/SOURCES.md) · [live version](https://redbelly-network-infographics.vercel.app/sources.html) |
 
-## The 11 infographics
+## Repository structure
 
-| No. | Title | The one idea | File name |
-| --- | --- | --- | --- |
-| 01 | What is Redbelly? | A public layer 1 blockchain built for tokenising real world assets. | `01-what-is-redbelly` |
-| 02 | Why tokenise real world assets? | A token records who owns an asset and carries its rules. Today versus tokenised. | `02-why-tokenise-real-world-assets` |
-| 03 | DBFT consensus | Nodes agree on blocks together, with no leader, so blocks are final. | `03-dbft-consensus` |
-| 04 | Receptor | Redbelly's identity protocol: lets verified users in, sets rules, proves you qualify. | `04-receptor` |
-| 05 | Verifiable credentials | Issuer, holder and verifier: a signed proof you keep and share. | `05-verifiable-credentials` |
-| 06 | Zero knowledge proofs | Prove something is true without revealing the data. | `06-zk-proofs` |
-| 07 | Tokeniser | The Redbelly Network project funds and companies use to issue and manage tokenised assets. | `07-tokeniser` |
-| 08 | Compliance aware assets | An asset carries its own rules and every transfer is checked against them. | `08-compliance-aware-assets` |
-| 09 | Identity and accountability | Every participant is known, and a node that cheats leaves proof. | `09-identity-and-accountability` |
-| 10 | Governance | How the Redbelly Community DAO decides today, on its own voting platform. | `10-governance` |
-| 11 | Project Acacia | The RBA and DFCRC real money pilot, and Redbelly's part in it. | `11-project-acacia` |
+```text
+redbelly-explained/
+├── png/                  33 finished PNGs: 16x9/, 4x5/, 1x1/
+├── svg/                  The same 33 designs as editable SVG with live text
+├── source/
+│   ├── src/              Content (topics.js), styles, icons and the renderer
+│   ├── tools/            Render, export, check, verify and site build scripts
+│   ├── brand/            Redbelly DAO logo from the Task Board brand kit
+│   └── fonts/            Be Vietnam Pro and JetBrains Mono, with OFL licences
+├── verification/         Check reports as Markdown, HTML and JSON
+├── assets/               overview.png and the zip of all 33 PNGs
+├── SOURCES.md            Every fact, its page and a supporting quote
+├── sources.html          The same source list as a web page
+└── index.html            The live gallery
+```
 
-Each file name exists in all three PNG folders and all three SVG folders.
+## Accuracy and sources
 
-## Deploy on Vercel
+- **Supplied resources only.** Every fact on the artwork maps to a page from the task's resource list and a supporting quote in [`SOURCES.md`](redbelly-explained/SOURCES.md).
+- **Current governance.** Infographic 10 follows the TASK-23 changelog for what has been decided and is in force, and the DAO voting platform for how voting works today. Where the changelog describes Snapshot voting, the voting platform takes priority. Constitution v1.2 and Snapshot rules are not used.
+- **Nothing that goes stale or misleads.** Figures that change daily (node counts, TVL, transaction totals) are left out, along with all price talk, investment wording and promises of returns.
+- **Dated.** Every infographic prints a "last verified" date, so readers know when the facts were checked.
 
-The site is static. There is no build step and `index.html` is at the root.
+## Verification
 
-1. Unzip `redbelly-explained.zip`.
-2. Either run `npx vercel deploy --prod` inside the `redbelly-explained` folder, or push the folder to a Git repository and import it in Vercel with Framework Preset "Other", no build command and the root as the output directory.
+Every check runs from a script in `source/tools/` and writes a report to [`verification/`](redbelly-explained/verification/).
 
-The gallery shows every infographic in the format you pick, opens any image full size, links every PNG and SVG for download, offers all 33 PNGs in one zip, and has a source list and a plain text version of each infographic (useful as alt text when posting).
+| Check | Command | Result (24 Oct 2026) |
+| --- | --- | --- |
+| Every quote in the source list is still on its live page | `npm run verify` | ✅ 96 of 96 quotes found on 28 pages |
+| Every PNG at the required size; no clipped, overlapping or out-of-bounds text; smallest text measured at phone width | `npm run check` | ✅ 33 of 33 layouts pass |
+| Every SVG redrawn and compared pixel by pixel with its PNG | `npm run compare` | ✅ 33 of 33 match |
+| No price talk, investment wording, personal credit, emoji or outdated governance wording | `npm run lint` | ✅ Pass |
 
-## Edit the words or the design
+Full reports: [source check](redbelly-explained/verification/source-check.md) · [layout check](redbelly-explained/verification/layout-check.md) · [SVG check](redbelly-explained/verification/svg-check.md)
 
-Everything is built from one content file, so the PNGs, SVGs, gallery and source list never drift apart.
+## Edit and rebuild
+
+All words come from one content file, so the PNGs, SVGs, gallery and source list never drift apart.
 
 | To change | Edit |
 | --- | --- |
-| Titles, leads, labels, notes, footers and the facts behind them | `source/src/topics.js` |
-| The "last verified" date printed on every infographic | `RX.verified` in `source/src/topics.js` |
+| Titles, text, labels and the facts behind them | `source/src/topics.js` |
+| The "last verified" date | `RX.verified` in `source/src/topics.js` |
 | Colours and fonts | `source/src/tokens.css` |
-| Layout of each diagram, per format | `source/src/series.css` |
-| Icons (all drawn for this series on a 48 unit grid) | `source/src/icons.js` |
+| Diagram layout, per format | `source/src/series.css` |
+| Icons (drawn for this series on a 48 unit grid) | `source/src/icons.js` |
 
-To preview, open `source/infographic.html` in Chrome and pick an infographic and a format. To rebuild every file:
-
-```
-cd source
+```bash
+cd redbelly-explained/source
 npm install
 npx playwright install chromium
 npm run build     # PNGs, SVGs, layout check, SVG check, copy check, gallery and source list
 npm run verify    # re-reads every cited page and confirms each quote (needs internet and pdftotext)
 ```
 
-To edit in a design tool, open a file from `svg/`. In Figma, drag the SVG onto the canvas: text stays editable and both fonts are built into Figma. For Illustrator or Inkscape, install Be Vietnam Pro and JetBrains Mono from Google Fonts first.
+To edit in a design tool, drag any file from `svg/` into Figma: the text stays editable. For Illustrator or Inkscape, install Be Vietnam Pro and JetBrains Mono from Google Fonts first.
 
-## Design decisions
+## Design system
 
-- **One series look.** Every infographic shares the same frame: an 11 step series rail with the current topic in red, the "Redbelly explained" label and number, a title and a one sentence answer, one diagram, and a footer with the sources, the last verified date and the DAO logo. The diagrams change with the idea (hub, comparison table, consensus drawings, steps, trust triangle, layer stack, transfer check, lanes, stats and timeline) but use one set of cards, icon tiles and arrows.
-- **Brand.** These are DAO contributor deliverables, so they follow the Redbelly DAO Task Board brand kit ("Kinetic Consensus"): deep slate surfaces, one red accent (#EF5350), Be Vietnam Pro for words and JetBrains Mono for machine values, status colours only for status, no drop shadows, plain hyphens only, no emoji, and a dated "last verified" line on every graphic because some facts expire. The kit is built to sit alongside Redbelly Network's own identity and asks that material is not presented under the Redbelly Network name without the core team, so the DAO mark is used (light ink on dark, no plate, clear space kept, well above the 28 px minimum) and the Redbelly Network logo is not.
-- **Phone first.** Type sizes are set per format and measured at phone width (390 pt wide screen). On the 1:1 and 4:5 files the smallest body text is about 10 pt or more. A 16:9 image is shown much smaller on a phone, so its body text was pushed to 8.2 pt or more; for phone-first channels post the 4:5 or 1:1 file.
-- **Facts only from the supplied resources.** Each claim on the artwork maps to a page and a quote in `SOURCES.md`. Figures that change daily (node counts, TVL, transactions processed) and anything about token prices were left out on purpose.
-- **Governance from the current sources.** Infographic 10 is built from the TASK-23 changelog (what was decided and what is in force, sourced to 1 August 2026) and the DAO voting platform (how voting works today), which takes priority wherever the changelog describes Snapshot voting. Constitution v1.2 is not used. The platform was re-checked on 24 Oct 2026: 41 proposals, none open, nothing newer that changes the facts shown.
+- **One series look.** Every infographic shares the same frame: an 11-step series rail with the current topic in red, a title and a one-sentence answer, one diagram, and a footer with sources, the last verified date and the DAO logo.
+- **Brand.** The series follows the Redbelly DAO Task Board brand kit: deep slate surfaces, one red accent (`#EF5350`), Be Vietnam Pro for words and JetBrains Mono for machine values. The kit asks that DAO material is not presented under the Redbelly Network name, so the DAO mark is used and the Redbelly Network logo is not.
+- **Phone first.** Type sizes are set per format and measured on a 390 pt wide phone screen. On the 4:5 and 1:1 files the smallest body text is about 10 pt or more.
 
-## Checks
+## Licences
 
-| Check | Command | Result (24 Oct 2026) |
-| --- | --- | --- |
-| Every quote in the source list is still on its live page | `npm run verify` | 96 of 96 quotes found on 28 pages |
-| Every PNG at the required size; no clipped, overlapping or out of bounds text; smallest text measured at phone width | `npm run check` | 33 of 33 layouts pass |
-| Every SVG drawn back and compared pixel by pixel with its PNG | `npm run compare` | 33 of 33 match |
-| No price talk, investment wording, promises of returns, personal credit, em or en dashes, emoji, or outdated governance wording | `npm run lint` | pass |
+| Asset | Licence |
+| --- | --- |
+| Be Vietnam Pro, JetBrains Mono | SIL Open Font License 1.1 (licence texts in `source/fonts/`) |
+| Redbelly DAO logo | From the [Task Board brand kit](https://taskboard.redbellydao.network/brand), dark and light versions, used as supplied |
+| Icons, diagrams, layouts and code | Original work made for this series |
+| Playwright (build only) | Apache 2.0, not shipped with the site |
 
-Full reports are in `verification/`.
-
-## Licences and credits for assets
-
-- **Fonts:** Be Vietnam Pro and JetBrains Mono, both under the SIL Open Font License 1.1. Licence texts are in `source/fonts`.
-- **Logo:** the Redbelly DAO mark from the Task Board brand kit (taskboard.redbellydao.network/brand), used as supplied apart from proportional resizing.
-- **Icons, diagrams, layouts and code:** original work made for this series. No icon sets, templates, stock images or third-party code are included.
-- **Build tool:** Playwright (Apache 2.0) renders the files during the build. It is a development dependency and is not part of the site.
+No stock images, icon sets, templates or third-party artwork are included.
