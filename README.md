@@ -8,7 +8,6 @@ Eleven infographics that explain Redbelly's core ideas in plain language, one id
 | 4:5 | 1080 x 1350 PNG | phone feeds |
 | 1:1 | 1080 x 1080 PNG | Discord, pins, X |
 
-![All 11 infographics](assets/overview.png)
 
 ## What is in this folder
 
