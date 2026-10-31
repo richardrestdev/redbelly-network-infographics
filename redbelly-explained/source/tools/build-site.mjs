@@ -55,6 +55,7 @@ function sourcesMarkdown() {
   const lines = [
     "# Sources", "",
     `Every fact printed on the 11 infographics, the page it comes from and a short quote from that page that supports it. All quotes were found on the live pages on ${RX.verified} (see verification/source-check.md). Only the resources supplied with the task were used.`, "",
+    "Each fact also lists the exact printed lines it supports and, where the source attaches one, the condition that has to be printed with it. verification/claim-check.md tests every printed line against these quotes: traced to a fact, numbers present in the quote, no wider wording (every, all, only, no) than the quote, hedges kept, conditions printed.", "",
     `**Governance.** ${GOV_NOTE}`, "",
     "## Pages used", "",
     "| Page | Link | Used in |", "| --- | --- | --- |",
@@ -62,8 +63,8 @@ function sourcesMarkdown() {
   ];
   for (const t of RX.topics) {
     lines.push(`## ${pad(t.n)} ${t.title}`, "", `Printed source line: ${t.foot.join(" / ")}`, "",
-      "| What the infographic says | Page | Supporting quote |", "| --- | --- | --- |",
-      ...t.facts.map(f => `| ${cell(f.claim)} | [${cell(RX.src[f.src].name)}](${RX.src[f.src].url}) | "${cell(f.quote)}" |`), "");
+      "| # | What the infographic says | Printed lines | Page | Supporting quote |", "| --- | --- | --- | --- | --- |",
+      ...t.facts.map((f, i) => `| ${i + 1} | ${cell(f.claim)}${f.when ? ` **Condition printed:** "${cell(f.when)}".` : ""} | ${f.on.map(o => `"${cell(o)}"`).join("<br>")} | [${cell(RX.src[f.src].name)}](${RX.src[f.src].url}) | "${cell(f.quote)}" |`), "");
   }
   return lines.join("\n");
 }
@@ -204,7 +205,8 @@ ${cards}
   <h2>How these were checked</h2>
   <div class="checks">
     <div class="check"><b>${stats.quotes}</b><span>Every fact on the artwork traced to a supplied resource, with a quote from that page. The quotes were found on the live pages on ${esc(RX.verified)}. <a href="verification/source-check.html">Report</a></span></div>
-    <div class="check"><b>${stats.layouts}</b><span>Every PNG at the required size, no text clipped, overlapping or outside its box, and small text measured at phone width. <a href="verification/layout-check.html">Report</a></span></div>
+    <div class="check"><b>${stats.claims}</b><span>Every printed line traced to a sourced fact and tested against its quotes: same numbers, no wider wording, hedges kept, and every source condition printed. <a href="verification/claim-check.html">Report</a></span></div>
+    <div class="check"><b>${stats.layouts}</b><span>Every PNG at the required size, no text clipped, overlapping or outside its box, and no text under 11 pt on a 390 pt wide phone screen in any format (body 12 pt or more on 4:5 and 1:1). <a href="verification/layout-check.html">Report</a></span></div>
     <div class="check"><b>${stats.svg}</b><span>Every editable SVG drawn back and compared with its PNG, pixel by pixel. <a href="verification/svg-check.html">Report</a></span></div>
     <div class="check"><b>${stats.copy}</b><span>No price talk, investment wording or promises of returns, no personal credit, no em or en dashes, no emoji, and governance described only from the current sources.</span></div>
   </div>
@@ -259,8 +261,8 @@ function sourcesPage() {
   const rows = pagesUsed().map(p => `<tr><td>${esc(p.name)}</td><td><a href="${esc(p.url)}" rel="noopener">${esc(p.url)}</a></td><td>${[...p.topics].join(", ")}</td></tr>`).join("");
   const sections = RX.topics.map(t => `<section class="info" id="t${pad(t.n)}"><h2>${pad(t.n)} ${esc(t.title)}</h2>
 <p>Printed source line: ${esc(t.foot.join(" / "))}</p>
-<table><thead><tr><th>What the infographic says</th><th>Page</th><th>Supporting quote</th></tr></thead><tbody>
-${t.facts.map(f => `<tr><td>${esc(f.claim)}</td><td><a href="${esc(RX.src[f.src].url)}" rel="noopener">${esc(RX.src[f.src].name)}</a></td><td>“${esc(f.quote)}”</td></tr>`).join("\n")}
+<table><thead><tr><th>#</th><th>What the infographic says</th><th>Printed lines</th><th>Page</th><th>Supporting quote</th></tr></thead><tbody>
+${t.facts.map((f, i) => `<tr><td>${i + 1}</td><td>${esc(f.claim)}${f.when ? ` <b>Condition printed:</b> “${esc(f.when)}”.` : ""}</td><td>${f.on.map(o => `“${esc(o)}”`).join("<br>")}</td><td><a href="${esc(RX.src[f.src].url)}" rel="noopener">${esc(RX.src[f.src].name)}</a></td><td>“${esc(f.quote)}”</td></tr>`).join("\n")}
 </tbody></table></section>`).join("\n");
   const body = `<header class="top"><div class="wrap">
   <div class="rail" aria-hidden="true">${"<i></i>".repeat(11)}</div>
@@ -338,12 +340,13 @@ async function main() {
     quotes: read("source-check.md", /Result: (\d+ of \d+ quotes found on \d+ pages)/, "Source check") ,
     layouts: read("layout-check.md", /Result: (\d+ of \d+ layouts pass)/, "Layout check"),
     svg: read("svg-check.md", /Result: (\d+ of \d+ SVG files match their PNG)/, "SVG check"),
+    claims: read("claim-check.md", /Result: (\d+ of \d+ printed lines and conditions pass)/, "Claim check"),
     copy: "Copy rules: pass"
   };
   fs.writeFileSync(path.join(root, "SOURCES.md"), sourcesMarkdown());
   fs.writeFileSync(path.join(root, "sources.html"), sourcesPage());
   fs.writeFileSync(path.join(root, "index.html"), gallery(stats));
-  for (const [file, title] of [["source-check", "Source check"], ["layout-check", "Layout check"], ["svg-check", "SVG export check"]]) {
+  for (const [file, title] of [["source-check", "Source check"], ["claim-check", "Claim check"], ["layout-check", "Layout check"], ["svg-check", "SVG export check"]]) {
     const md = path.join(root, "verification", file + ".md");
     if (fs.existsSync(md)) fs.writeFileSync(path.join(root, "verification", file + ".html"), reportPage(fs.readFileSync(md, "utf8"), title));
   }

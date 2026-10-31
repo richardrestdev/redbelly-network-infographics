@@ -1,14 +1,17 @@
 // Automated checks on every rendered layout.
 //
-//   node tools/check.mjs            all topics, all formats
-//   node tools/check.mjs --json     machine-readable report on stdout
+//   node tools/check.mjs                  all topics, all formats
+//   node tools/check.mjs 2 9 --formats=landscape   only these (no report written)
+//   node tools/check.mjs --json           machine-readable report on stdout
+//   node tools/check.mjs --write          also save ../verification/layout-check.*
 //
 // For each infographic it measures, in the live page:
 //   1. every text line sits inside the canvas safe area,
 //   2. text inside a card stays inside that card,
 //   3. no two pieces of text overlap,
 //   4. the diagram does not run into the title block or the footer,
-//   5. the smallest text, converted to points on a 390 pt wide phone screen.
+//   5. the smallest text, converted to points on a 390 pt wide phone screen
+//      (the image shown at the full width of the phone, held upright).
 // It also checks the PNG files on disk: present, and at the required size.
 import { createRequire } from "node:module";
 import path from "node:path";
@@ -27,12 +30,15 @@ const { chromium } = (() => {
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, "..", "..");
 const PHONE_PT = 390;   // logical width of a typical phone screen, in points
-// Smallest allowed text on that screen, by role. The 16:9 file is shown at a
-// smaller scale on a phone than the 4:5 and 1:1 files, so it has its own floor.
+// Smallest allowed text on that screen. 11 pt is the smallest text size in
+// Apple's Human Interface Guidelines and Material Design's smallest type style
+// (11 sp), so no line of text on any format, labels, sources and dates
+// included, may go below it. Body text on the phone-first 4:5 and 1:1 files
+// must reach 12 pt (Material's body small).
 const MIN_PT = {
-  landscape: { body: 8.0, label: 6.3, meta: 6.0 },
-  portrait:  { body: 10.0, label: 7.5, meta: 7.5 },
-  square:    { body: 10.0, label: 7.5, meta: 7.5 }
+  landscape: { body: 11.0, label: 11.0, meta: 11.0 },
+  portrait:  { body: 12.0, label: 11.0, meta: 11.0 },
+  square:    { body: 12.0, label: 11.0, meta: 11.0 }
 };
 const REQUIRED = { landscape: [1920, 1080], portrait: [1080, 1350], square: [1080, 1080] };
 
@@ -136,7 +142,8 @@ function measure() {
       if (ox > 1 && oy > 1) problems.push(`blocks overlap: ${blocks[i].className} / ${blocks[j].className}`);
     }
   }
-  const pick = f => lines.filter(f).map(l => l.size);
+  // no text in a role (some layouts have no label-sized text) counts as no limit
+  const pick = f => { const v = lines.filter(f).map(l => l.size); return v.length ? v : [NaN]; };
   return {
     problems: [...new Set(problems)],
     minBody: Math.min(...pick(l => !l.isMeta && !l.isLabel)),
@@ -147,17 +154,23 @@ function measure() {
 }
 
 async function main() {
-  const asJson = process.argv.includes("--json");
+  const args = process.argv.slice(2);
+  const asJson = args.includes("--json");
+  const fmtArg = args.find(a => a.startsWith("--formats="));
+  const formats = fmtArg ? fmtArg.split("=")[1].split(",") : Object.keys(FORMATS);
+  const wanted = args.filter(a => !a.startsWith("--"));
+  const partial = wanted.length > 0 || !!fmtArg;
   const browser = await chromium.launch(launchOptions());
   const page0 = await browser.newPage();
   await page0.goto("file://" + path.join(root, "source", "infographic.html"));
-  const topics = await page0.evaluate(() => window.RX.topics.map(t => ({ n: t.n, slug: t.slug })));
+  const topics = (await page0.evaluate(() => window.RX.topics.map(t => ({ n: t.n, slug: t.slug }))))
+    .filter(t => !wanted.length || wanted.some(w => w === t.slug || Number(w) === t.n));
   await page0.close();
 
   const report = [];
   let failures = 0;
   for (const t of topics) {
-    for (const fmt of Object.keys(FORMATS)) {
+    for (const fmt of formats) {
       const f = FORMATS[fmt];
       const { page, context } = await openTopic(browser, t.slug, fmt);
       const m = await page.evaluate(measure);
@@ -173,6 +186,7 @@ async function main() {
         words: m.words, problems: m.problems.slice()
       };
       const floor = MIN_PT[fmt];
+      if (isNaN(row.minLabelPt)) { row.minLabelPx = row.minBodyPx; row.minLabelPt = row.minBodyPt; }
       if (row.minBodyPt < floor.body) row.problems.push(`body text ${row.minBodyPt} pt on a phone (min ${floor.body})`);
       if (row.minLabelPt < floor.label) row.problems.push(`label text ${row.minLabelPt} pt on a phone (min ${floor.label})`);
       if (row.minMetaPt < floor.meta) row.problems.push(`header/footer text ${row.minMetaPt} pt on a phone (min ${floor.meta})`);
@@ -190,15 +204,15 @@ async function main() {
   }
   await browser.close();
 
-  if (process.argv.includes("--write")) {
+  if (args.includes("--write") && !partial) {
     const dir = path.join(root, "verification");
     fs.mkdirSync(dir, { recursive: true });
     const when = new Date().toISOString();
     fs.writeFileSync(path.join(dir, "layout-check.json"), JSON.stringify({ checked: when, phoneWidthPt: PHONE_PT, minimumPt: MIN_PT, results: report }, null, 2));
     fs.writeFileSync(path.join(dir, "layout-check.md"), [
       "# Layout check", "",
-      `Checked ${when} by \`source/tools/check.mjs\`. For every file: PNG present at the required size, every line of text inside the safe area and inside its box, no overlapping text or boxes, nothing running into the title block or footer, and the smallest text converted to points on a ${PHONE_PT} pt wide phone screen.`, "",
-      `Minimum sizes allowed (points on the phone): 16:9 body ${MIN_PT.landscape.body}, labels ${MIN_PT.landscape.label}, header and footer ${MIN_PT.landscape.meta}; 4:5 and 1:1 body ${MIN_PT.square.body}, labels ${MIN_PT.square.label}, header and footer ${MIN_PT.square.meta}.`, "",
+      `Checked ${when} by \`source/tools/check.mjs\`. For every file: PNG present at the required size, every line of text inside the safe area and inside its box, no overlapping text or boxes, nothing running into the title block or footer, and the smallest text converted to points on a ${PHONE_PT} pt wide phone screen (the image at the full width of the phone, held upright, with no zoom).`, "",
+      `Readability standard: no text of any kind (body, labels, sources, dates) below 11 pt on that screen in any format, the smallest size in Apple's Human Interface Guidelines and Material Design's smallest type style (11 sp). Body text on the phone-first 4:5 and 1:1 files must reach 12 pt. Minimums used: 16:9 body ${MIN_PT.landscape.body}, labels ${MIN_PT.landscape.label}, header and footer ${MIN_PT.landscape.meta}; 4:5 and 1:1 body ${MIN_PT.square.body}, labels ${MIN_PT.square.label}, header and footer ${MIN_PT.square.meta}.`, "",
       `Result: ${report.length - failures} of ${report.length} layouts pass.`, "",
       "| Infographic | Format | PNG size | Smallest body text | Smallest label | Header and footer | Words | Result |",
       "| --- | --- | --- | --- | --- | --- | --- | --- |",

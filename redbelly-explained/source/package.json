@@ -9,8 +9,9 @@
     "compare": "node tools/compare-svg.mjs --write",
     "lint": "node tools/lint-copy.mjs",
     "verify": "node tools/verify-sources.mjs --write",
+    "claims": "node tools/check-claims.mjs --write",
     "site": "node tools/build-site.mjs",
-    "build": "npm run render && npm run svg && npm run check && npm run compare && npm run lint && npm run site",
+    "build": "npm run render && npm run svg && npm run check && npm run compare && npm run claims && npm run lint && npm run site",
     "all": "npm run build && npm run verify && npm run site && npm run lint"
   },
   "devDependencies": {

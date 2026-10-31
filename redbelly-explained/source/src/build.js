@@ -56,8 +56,8 @@
     var segs = RX.topics.map(function (x) { return "<i" + (x.n === t.n ? ' class="on"' : "") + "></i>"; }).join("");
     return '<header class="hd">' +
       '<div class="rail" aria-hidden="true">' + segs + "</div>" +
-      '<div class="hd-row"><span class="series">Redbelly explained</span>' +
-      '<span class="count"><b>' + pad2(t.n) + "</b> / " + pad2(RX.topics.length) + "</span></div>" +
+      '<div class="hd-row"><span class="series">Redbelly explained <span class="count"><b>' + pad2(t.n) + "</b>/" + pad2(RX.topics.length) + "</span></span>" +
+      '<span class="ver"><span class="k">Verified</span> <span class="mono">' + esc(RX.verified) + "</span></span></div>" +
       "</header>";
   }
 
@@ -67,10 +67,8 @@
   }
 
   function footer(t) {
-    return '<footer class="ft"><div class="ft-text">' +
-      '<p class="ft-src"><span class="k">Sources</span> ' + t.foot.map(esc).join(' <span class="sep">/</span> ') + "</p>" +
-      '<p class="ft-date"><span class="k">Last verified</span> <span class="mono">' + esc(RX.verified) + "</span></p>" +
-      '</div><img class="logo" src="brand/dao-logo-on-dark-600.png" alt="Redbelly DAO"></footer>';
+    return '<footer class="ft"><p class="ft-src"><span class="k">Sources</span> ' + t.foot.map(esc).join(' <span class="sep">/</span> ') + "</p>" +
+      '<img class="logo" src="brand/dao-logo-on-dark-600.png" alt="Redbelly DAO"></footer>';
   }
 
   /* ---------- visuals, one per diagram type ---------- */
@@ -90,23 +88,24 @@
     return '<div class="hub">' +
       '<div class="hub-core"><svg class="hexsvg" viewBox="0 0 220 254" aria-hidden="true">' +
         '<path class="hex-o" d="' + hexPath(220, 254, 3) + '"/><path class="hex-i" d="' + hexPath(220, 254, 17) + '"/></svg>' +
-        '<div class="core-txt"><span class="core-k">' + esc(v.core.kicker) + "</span><strong>" + esc(v.core.name) + "</strong>" +
-        '<span class="core-s">' + esc(v.core.sub) + "</span></div></div>" +
+        '<div class="core-txt">' + (v.core.kicker ? '<span class="core-k">' + esc(v.core.kicker) + "</span>" : "") + "<strong>" + esc(v.core.name) + "</strong>" +
+        (v.core.sub ? '<span class="core-s">' + esc(v.core.sub) + "</span>" : "") + "</div></div>" +
       '<ul class="hub-list">' + items + "</ul>" +
       '<svg class="wires" aria-hidden="true"></svg></div>' + note(v.note, "bank");
   };
 
   V.compare = function (v) {
     var cells = '<div class="cmp-bg" aria-hidden="true"></div>' +
-      '<div class="cmp-h c1">' + esc(v.left) + '</div><div class="cmp-h c3">' + esc(v.right) + "</div>";
+      '<div class="cmp-h c1">' + esc(v.left) + '</div><div class="cmp-h c3">' + esc(v.right) + "</div>" +
+      (v.needs ? '<div class="cmp-h c4">' + esc(v.needs) + "</div>" : "");
     v.rows.forEach(function (r, i) {
       var row = "grid-row:" + (i + 2);
-      cells += '<div class="cmp-l" style="' + row + '">' + tile(r.icon, "sm") + "<b>" + esc(r.label) + "</b></div>" +
-        '<div class="cmp-b" style="' + row + '"><span class="cmp-lbl">' + ico(r.icon) + esc(r.label) + "</span><span>" + esc(r.before) + "</span></div>" +
+      cells += '<div class="cmp-b" style="' + row + '"><span class="cmp-lbl">' + ico(r.icon) + esc(r.label) + "</span><span>" + esc(r.before) + "</span></div>" +
         '<div class="cmp-x" style="' + row + '">' + arrow() + "</div>" +
-        '<div class="cmp-a" style="' + row + '"><span>' + esc(r.after) + "</span></div>";
+        '<div class="cmp-a" style="' + row + '"><span>' + esc(r.after) + "</span></div>" +
+        (r.needs ? '<div class="cmp-n" style="' + row + '"><span>' + esc(r.needs) + "</span></div>" : "");
     });
-    return '<div class="cmp" style="grid-template-rows:auto repeat(' + v.rows.length + ',1fr)">' + cells + "</div>";
+    return '<div class="cmp' + (v.needs ? " has-needs" : "") + '" style="grid-template-rows:auto repeat(' + v.rows.length + ',auto)">' + cells + "</div>";
   };
 
   /* The two consensus drawings are built from simple shapes in a 400 x 230 box. */
@@ -184,11 +183,11 @@
 
   V.zk = function (v) {
     var arts = [
-      '<div class="zk-art art-ask"><span class="bubble">Over 18?<svg class="tail" viewBox="0 0 26 15" aria-hidden="true"><path d="M1 0L8 14L22 0"/></svg></span></div>',
+      '<div class="zk-art art-ask"><span class="bubble">' + esc(v.ask) + '<svg class="tail" viewBox="0 0 26 15" aria-hidden="true"><path d="M1 0L8 14L22 0"/></svg></span></div>',
       '<div class="zk-art art-prove"><div class="vc"><span class="vc-h">' + esc(v.card.title) + "</span>" +
         v.card.rows.map(function (r) { return '<span class="vc-row"><em>' + esc(r) + "</em>" + MASK + ico("lock") + "</span>"; }).join("") +
         "</div></div>",
-      '<div class="zk-art art-check">' + ico("contract", "big") + '<span class="result"><b>true</b></span></div>'
+      '<div class="zk-art art-check">' + ico("contract", "big") + '<span class="result"><b>' + esc(v.result) + "</b></span></div>"
     ];
     var parts = [];
     v.steps.forEach(function (st, i) {
@@ -214,7 +213,7 @@
     var chips = v.chips.map(chip).join("");
     return '<div class="gatev"><div class="gv">' +
       '<div class="gv-token"><div class="gv-th">' + ico("token") + "<b>" + esc(v.token.name) + "</b></div>" +
-      '<span class="gv-k">Rules it carries</span><ul class="gv-rules">' + rules + "</ul></div>" +
+      '<span class="gv-k">' + esc(v.token.caption) + '</span><ul class="gv-rules">' + rules + "</ul></div>" +
       '<div class="gv-out">' +
         '<div class="gv-res ok"><span class="badge">' + ico("check") + '</span><div class="txt">' + head3(v.pass.title, v.pass.text) + "</div></div>" +
         '<div class="gv-res no"><span class="badge">' + ico("cross") + '</span><div class="txt">' + head3(v.fail.title, v.fail.text) + "</div></div>" +
@@ -225,15 +224,13 @@
 
   V.lanes = function (v) {
     var lanes = v.lanes.map(function (lane, li) {
-      var parts = [];
-      lane.steps.forEach(function (st, i) {
-        if (i) parts.push(arrow("step-arrow"));
-        parts.push('<div class="ls">' + tile(st.icon, li ? "sm" : "") + '<div class="txt">' + head3(st.title, st.text) + "</div></div>");
-      });
+      var rows = lane.steps.map(function (st) {
+        return '<li class="ls">' + tile(st.icon, "sm") + '<p class="txt"><b>' + esc(st.title) + ".</b> " + esc(st.text) + "</p></li>";
+      }).join("");
       return '<div class="lane lane-' + (li ? "nodes" : "people") + '"><span class="lane-k">' + esc(lane.label) + "</span>" +
-        '<div class="lane-steps">' + parts.join("") + "</div></div>";
+        '<ol class="lane-steps">' + rows + "</ol></div>";
     }).join("");
-    return '<div class="lanes">' + lanes + "</div>" + note(v.note, "eyeoff");
+    return '<div class="lanes">' + lanes + "</div>" + (v.note ? note(v.note, "eyeoff") : "");
   };
 
   V.governance = function (v) {
@@ -258,7 +255,7 @@
     var time = v.timeline.map(function (e) {
       return '<li><i class="tl-dot" aria-hidden="true"></i><span class="mono">' + esc(e.when) + "</span><span>" + esc(e.what) + "</span></li>";
     }).join("");
-    return '<div class="aca"><div class="aca-stats">' + stats + '</div><ol class="aca-time"><i class="tl-line" aria-hidden="true"></i>' + time + "</ol></div>";
+    return '<div class="aca-stats">' + stats + '</div><ol class="aca-time"><i class="tl-line" aria-hidden="true"></i>' + time + "</ol>";
   };
 
   /* ---------- connectors, drawn after layout ---------- */
@@ -300,14 +297,18 @@
       var svg = root.querySelector(".hub .wires"); if (!svg) return;
       var o = prepWires(svg);
       var core = box(root.querySelector(".hub-core .hexsvg"), o);
-      var sx = core.r - core.w * 0.075, sy = core.cy;
+      var ends = {};
       root.querySelectorAll(".hub-item").forEach(function (item) {
-        var b = box(item, o), tx = b.l, ty = b.cy, dx = (tx - sx) * 0.55;
+        var b = box(item, o), left = b.cx < core.cx;
+        // leave the hexagon from the side that faces the item
+        var sx = left ? core.l + core.w * 0.075 : core.r - core.w * 0.075, sy = core.cy;
+        var tx = left ? b.r : b.l, ty = b.cy, dx = (tx - sx) * 0.55;
         add(svg, "path", { class: "wire", d: "M" + sx.toFixed(1) + " " + sy.toFixed(1) + "C" + (sx + dx).toFixed(1) + " " + sy.toFixed(1) +
           " " + (tx - dx).toFixed(1) + " " + ty.toFixed(1) + " " + tx.toFixed(1) + " " + ty.toFixed(1) });
         add(svg, "circle", { cx: tx.toFixed(1), cy: ty.toFixed(1), r: 4.5, class: "pin" });
+        ends[sx.toFixed(1)] = sx;
       });
-      add(svg, "circle", { cx: sx.toFixed(1), cy: sy.toFixed(1), r: 6.5, class: "pin" });
+      Object.keys(ends).forEach(function (k) { add(svg, "circle", { cx: k, cy: core.cy.toFixed(1), r: 6.5, class: "pin" }); });
     },
 
     triangle: function (root) {
@@ -316,13 +317,22 @@
       var disc = {};
       ["issuer", "holder", "verifier"].forEach(function (k) { disc[k] = box(root.querySelector(".tri-" + k + " .disc"), o); });
       var gap = 10;
+      // on 16:9 the three roles stand in a row, so the check back to the issuer arcs over the holder
+      var row = Math.abs(disc.issuer.cy - disc.holder.cy) < 4;
       [["issue", "issuer", "holder", ""], ["share", "holder", "verifier", ""], ["trust", "verifier", "issuer", "dash"]].forEach(function (e) {
-        var A = disc[e[1]], B = disc[e[2]];
-        var p = edgePoint(A, B.cx, B.cy, gap), q = edgePoint(B, A.cx, A.cy, gap);
-        add(svg, "path", { d: "M" + p.x.toFixed(1) + " " + p.y.toFixed(1) + "L" + q.x.toFixed(1) + " " + q.y.toFixed(1), class: "wire " + e[3] });
-        arrowHead(svg, q.x, q.y, Math.atan2(q.y - p.y, q.x - p.x), 13, e[3]);
-        var lbl = root.querySelector('.edge-lbl[data-edge="' + e[0] + '"]');
-        var mx = (p.x + q.x) / 2, my = (p.y + q.y) / 2;
+        var A = disc[e[1]], B = disc[e[2]], lbl = root.querySelector('.edge-lbl[data-edge="' + e[0] + '"]'), mx, my;
+        if (row && e[0] === "trust") {
+          var p0 = { x: A.cx, y: A.t - gap }, p2 = { x: B.cx, y: B.t - gap };
+          var c = { x: (p0.x + p2.x) / 2, y: Math.min(p0.y, p2.y) - 2 * (lbl.offsetHeight / 2 + 28) };
+          add(svg, "path", { d: "M" + p0.x.toFixed(1) + " " + p0.y.toFixed(1) + "Q" + c.x.toFixed(1) + " " + c.y.toFixed(1) + " " + p2.x.toFixed(1) + " " + p2.y.toFixed(1), class: "wire " + e[3] });
+          arrowHead(svg, p2.x, p2.y, Math.atan2(p2.y - c.y, p2.x - c.x), 13, e[3]);
+          mx = 0.25 * p0.x + 0.5 * c.x + 0.25 * p2.x; my = 0.25 * p0.y + 0.5 * c.y + 0.25 * p2.y;
+        } else {
+          var p = edgePoint(A, B.cx, B.cy, gap), q = edgePoint(B, A.cx, A.cy, gap);
+          add(svg, "path", { d: "M" + p.x.toFixed(1) + " " + p.y.toFixed(1) + "L" + q.x.toFixed(1) + " " + q.y.toFixed(1), class: "wire " + e[3] });
+          arrowHead(svg, q.x, q.y, Math.atan2(q.y - p.y, q.x - p.x), 13, e[3]);
+          mx = (p.x + q.x) / 2; my = (p.y + q.y) / 2;
+        }
         lbl.style.left = (mx - lbl.offsetWidth / 2).toFixed(1) + "px";
         lbl.style.top = (my - lbl.offsetHeight / 2).toFixed(1) + "px";
       });
@@ -357,8 +367,8 @@
   /* ---------- assemble ---------- */
 
   RX.layoutOf = function (t, fmt) {
-    var L = { hub: "split", compare: "band", dbft: "band", jobs: "split", triangle: "split", zk: "band",
-      stack: "split", gate: "split", lanes: "split", governance: "split", acacia: "split" };
+    var L = { hub: "band", compare: "band", dbft: "band", jobs: "split", triangle: "band", zk: "band",
+      stack: "split", gate: "band", lanes: "split", governance: "split", acacia: "split" };
     return fmt === "landscape" ? L[t.visual.type] : "stack";
   };
 

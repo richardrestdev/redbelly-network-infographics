@@ -34,7 +34,7 @@ const EMOJI = /\p{Extended_Pictographic}/u;
 const FILLER = /\b(elevate[sd]?|seamless(ly)?|unleash(es|ed)?|revolution(ise|ize|ary|ising|izing)[sd]?)\b/i;
 const MONEY = /\b(price[sd]?|pricing|returns?|profits?|apy|apr|yields?|gains?|roi|moon|pump|bullish|bearish|buy|sell|market cap|financial advice|guaranteed?|upside|earn)\b/i;
 const CREDIT = /(made by|designed by|created by|illustrated by|written by|©|(^|\s)@\w)/i;
-const WORD_BUDGET = 110;
+const WORD_BUDGET = 100;
 
 /* every string printed on one infographic */
 function printed(t, RX) {
@@ -79,7 +79,8 @@ export function lintFile(file) {
     const where = `${path.relative(root, file)}:${i + 1}`;
     if (DASHES.test(line)) problems.push(`${where}: em or en dash`);
     if (EMOJI.test(line)) problems.push(`${where}: emoji`);
-    if (/(made by|designed by|created by)\b/i.test(line)) problems.push(`${where}: personal credit line`);
+    // a credit line names someone: "made by Name" or "by @handle" ("created by protocol finance" in a quote is not one)
+    if (/\b(?:[Mm]ade|[Dd]esigned|[Cc]reated|[Ii]llustrated|[Ww]ritten) by\s+(?:@\w|[A-Z])/.test(line)) problems.push(`${where}: personal credit line`);
   });
   return problems;
 }
@@ -88,8 +89,8 @@ function main() {
   const RX = loadTopics();
   const problems = lintTopics(RX);
   const files = [
-    path.join(root, "index.html"), path.join(root, "README.md"), path.join(root, "SOURCES.md"),
-    path.join(source, "README.md"), path.join(source, "infographic.html")
+    path.join(root, "index.html"), path.join(root, "README.md"), path.join(root, "SOURCES.md"), path.join(root, "REVISION.md"),
+    path.join(root, "..", "README.md"), path.join(source, "README.md"), path.join(source, "infographic.html")
   ].filter(f => fs.existsSync(f));
   for (const f of files) problems.push(...lintFile(f));
   const words = RX.topics.map(t => printed(t, RX).join(" ").split(/\s+/).filter(Boolean).length);

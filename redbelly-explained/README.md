@@ -18,7 +18,8 @@ Eleven infographics that explain Redbelly's core ideas in plain language, one id
 | `png/16x9`, `png/4x5`, `png/1x1` | The 33 finished PNGs. |
 | `svg/16x9`, `svg/4x5`, `svg/1x1` | The same 33 designs as editable SVG with live text. |
 | `source/` | Editable source: words, styles, icons and the scripts that build and check everything. |
-| `SOURCES.md` and `sources.html` | The source list: every fact on every infographic, its page and a supporting quote. |
+| `SOURCES.md` and `sources.html` | The source list: every fact on every infographic, the printed lines it supports, its page and a supporting quote. |
+| `REVISION.md` | What changed in response to the review, and why. |
 | `verification/` | Reports from the checks below, as Markdown, HTML and JSON. |
 | `assets/` | `overview.png` (all 11 at a glance) and `redbelly-explained-png.zip` (all 33 PNGs). |
 
@@ -27,15 +28,15 @@ Eleven infographics that explain Redbelly's core ideas in plain language, one id
 | No. | Title | The one idea | File name |
 | --- | --- | --- | --- |
 | 01 | What is Redbelly? | A public layer 1 blockchain built for tokenising real world assets. | `01-what-is-redbelly` |
-| 02 | Why tokenise real world assets? | A token records who owns an asset and carries its rules. Today versus tokenised. | `02-why-tokenise-real-world-assets` |
+| 02 | Why tokenise real world assets? | A token records who owns an asset and carries its rules. Each benefit only comes with the right setup. | `02-why-tokenise-real-world-assets` |
 | 03 | DBFT consensus | Nodes agree on blocks together, with no leader, so blocks are final. | `03-dbft-consensus` |
 | 04 | Receptor | Redbelly's identity protocol: lets verified users in, sets rules, proves you qualify. | `04-receptor` |
 | 05 | Verifiable credentials | Issuer, holder and verifier: a signed proof you keep and share. | `05-verifiable-credentials` |
-| 06 | Zero knowledge proofs | Prove something is true without revealing the data. | `06-zk-proofs` |
+| 06 | Zero knowledge (ZK) proofs | Prove something is true without revealing the data. | `06-zk-proofs` |
 | 07 | Tokeniser | The Redbelly Network project funds and companies use to issue and manage tokenised assets. | `07-tokeniser` |
 | 08 | Compliance aware assets | An asset carries its own rules and every transfer is checked against them. | `08-compliance-aware-assets` |
-| 09 | Identity and accountability | Every participant is known, and a node that cheats leaves proof. | `09-identity-and-accountability` |
-| 10 | Governance | How the Redbelly Community DAO decides today, on its own voting platform. | `10-governance` |
+| 09 | Identity and accountability | Every participant is known. Nodes that try to cause disagreement leave proof (only possible with 1 in 3 or more faulty nodes). | `09-identity-and-accountability` |
+| 10 | Governance | How the Redbelly Community DAO votes today, on its own platform. | `10-governance` |
 | 11 | Project Acacia | The RBA and DFCRC real money pilot, and Redbelly's part in it. | `11-project-acacia` |
 
 Each file name exists in all three PNG folders and all three SVG folders.
@@ -57,8 +58,8 @@ Everything is built from one content file, so the PNGs, SVGs, gallery and source
 
 | To change | Edit |
 | --- | --- |
-| Titles, leads, labels, notes, footers and the facts behind them | `source/src/topics.js` |
-| The "last verified" date printed on every infographic | `RX.verified` in `source/src/topics.js` |
+| Titles, leads, labels, notes, footers and the facts behind them (each fact's quote, the printed lines it supports in `on`, any source condition in `when`) | `source/src/topics.js` |
+| The "verified" date printed on every infographic | `RX.verified` in `source/src/topics.js` |
 | Colours and fonts | `source/src/tokens.css` |
 | Layout of each diagram, per format | `source/src/series.css` |
 | Icons (all drawn for this series on a 48 unit grid) | `source/src/icons.js` |
@@ -69,7 +70,7 @@ To preview, open `source/infographic.html` in Chrome and pick an infographic and
 cd source
 npm install
 npx playwright install chromium
-npm run build     # PNGs, SVGs, layout check, SVG check, copy check, gallery and source list
+npm run build     # PNGs, SVGs, layout check, SVG check, claim check, copy check, gallery and source list
 npm run verify    # re-reads every cited page and confirms each quote (needs internet and pdftotext)
 ```
 
@@ -77,18 +78,19 @@ To edit in a design tool, open a file from `svg/`. In Figma, drag the SVG onto t
 
 ## Design decisions
 
-- **One series look.** Every infographic shares the same frame: an 11 step series rail with the current topic in red, the "Redbelly explained" label and number, a title and a one sentence answer, one diagram, and a footer with the sources, the last verified date and the DAO logo. The diagrams change with the idea (hub, comparison table, consensus drawings, steps, trust triangle, layer stack, transfer check, lanes, stats and timeline) but use one set of cards, icon tiles and arrows.
-- **Brand.** These are DAO contributor deliverables, so they follow the Redbelly DAO Task Board brand kit ("Kinetic Consensus"): deep slate surfaces, one red accent (#EF5350), Be Vietnam Pro for words and JetBrains Mono for machine values, status colours only for status, no drop shadows, plain hyphens only, no emoji, and a dated "last verified" line on every graphic because some facts expire. The kit is built to sit alongside Redbelly Network's own identity and asks that material is not presented under the Redbelly Network name without the core team, so the DAO mark is used (light ink on dark, no plate, clear space kept, well above the 28 px minimum) and the Redbelly Network logo is not.
-- **Phone first.** Type sizes are set per format and measured at phone width (390 pt wide screen). On the 1:1 and 4:5 files the smallest body text is about 10 pt or more. A 16:9 image is shown much smaller on a phone, so its body text was pushed to 8.2 pt or more; for phone-first channels post the 4:5 or 1:1 file.
-- **Facts only from the supplied resources.** Each claim on the artwork maps to a page and a quote in `SOURCES.md`. Figures that change daily (node counts, TVL, transactions processed) and anything about token prices were left out on purpose.
-- **Governance from the current sources.** Infographic 10 is built from the TASK-23 changelog (what was decided and what is in force, sourced to 1 August 2026) and the DAO voting platform (how voting works today), which takes priority wherever the changelog describes Snapshot voting. Constitution v1.2 is not used. The platform was re-checked on 24 Oct 2026: 41 proposals, none open, nothing newer that changes the facts shown.
+- **One series look.** Every infographic shares the same frame: an 11 step series rail with the current topic in red, the "Redbelly explained" label, number and verified date, a title and a one sentence answer, one diagram, and a footer with the sources and the DAO logo. The diagrams change with the idea (hub, comparison table, consensus drawings, steps, trust triangle, layer stack, transfer check, lanes, stats and timeline) but use one set of cards, icon tiles and arrows.
+- **Brand.** These are DAO contributor deliverables, so they follow the Redbelly DAO Task Board brand kit ("Kinetic Consensus"): deep slate surfaces, one red accent (#EF5350), Be Vietnam Pro for words and JetBrains Mono for machine values, status colours only for status, no drop shadows, plain hyphens only, no emoji, and a dated "verified" line on every graphic because some facts expire. The kit is built to sit alongside Redbelly Network's own identity and asks that material is not presented under the Redbelly Network name without the core team, so the DAO mark is used (light ink on dark, no plate, clear space kept, well above the 28 px minimum) and the Redbelly Network logo is not.
+- **Phone first.** Readability is measured with the image filling a 390 pt wide phone held upright, with no zoom. No text of any kind (body, labels, sources, dates) is under 11 pt in any of the three formats, the smallest size in Apple's Human Interface Guidelines and Material Design's smallest type style. Body text on the 1:1 and 4:5 files is 12 pt or more (12.3 pt and 13 pt). The 16:9 files meet the same 11 pt floor, so they use fewer, larger words, laid out across the width. To fit, the copy was cut to 58 to 92 words per file, header and footer included (it was 73 to 104).
+- **Facts only from the supplied resources, read with their conditions.** Each claim on the artwork maps to a page and a quote in `SOURCES.md`, and each fact names the printed lines it supports. Where a source attaches a condition, it is printed: 02 shows what each benefit needs (the payment on the same ledger, identity built into the network, a 24/7 market), and 09 says proofs of fraud come from faulty nodes trying to cause disagreement, which is only possible with 1 in 3 or more faulty nodes, and that removal needs enough proof. Figures that change daily (node counts, TVL, transactions processed) and anything about token prices were left out on purpose.
+- **Governance from the current sources.** Infographic 10 is built from the TASK-23 changelog (what was decided and what is in force, sourced to 1 August 2026) and the DAO voting platform (how voting works today), which takes priority wherever the changelog describes Snapshot voting. Constitution v1.2 is not used. The platform was re-checked on 31 Oct 2026: 41 proposals, none open, nothing newer that changes the facts shown.
 
 ## Checks
 
-| Check | Command | Result (24 Oct 2026) |
+| Check | Command | Result (31 Oct 2026) |
 | --- | --- | --- |
-| Every quote in the source list is still on its live page | `npm run verify` | 96 of 96 quotes found on 28 pages |
-| Every PNG at the required size; no clipped, overlapping or out of bounds text; smallest text measured at phone width | `npm run check` | 33 of 33 layouts pass |
+| Every quote in the source list is still on its live page | `npm run verify` | 101 of 101 quotes found on 28 pages |
+| Every printed line traced to a fact and read against its quotes: numbers match, no wider wording (every, all, only, no) than the quote, hedges kept, every source condition printed | `npm run claims` | 126 of 126 lines and conditions pass |
+| Every PNG at the required size; no clipped, overlapping or out of bounds text; no text under 11 pt on a 390 pt phone screen in any format, body 12 pt or more on 4:5 and 1:1 | `npm run check` | 33 of 33 layouts pass |
 | Every SVG drawn back and compared pixel by pixel with its PNG | `npm run compare` | 33 of 33 match |
 | No price talk, investment wording, promises of returns, personal credit, em or en dashes, emoji, or outdated governance wording | `npm run lint` | pass |
 

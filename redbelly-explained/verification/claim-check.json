@@ -1,0 +1,2636 @@
+{
+  "checked": "2026-10-31T05:18:00.029Z",
+  "results": [
+    {
+      "topic": "01 What is Redbelly?",
+      "line": "What is Redbelly?",
+      "where": "title",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "01 What is Redbelly?",
+      "line": "A public layer 1 blockchain, built for tokenising real world assets.",
+      "where": "lead",
+      "label": false,
+      "facts": [
+        1,
+        2
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "pass",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "01 What is Redbelly?",
+      "line": "Redbelly Network",
+      "where": "name",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "01 What is Redbelly?",
+      "line": "Real world assets",
+      "where": "title",
+      "label": false,
+      "facts": [
+        3
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "01 What is Redbelly?",
+      "line": "Bonds, credit, real estate.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        3
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "01 What is Redbelly?",
+      "line": "Identity verified",
+      "where": "title",
+      "label": false,
+      "facts": [
+        4
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "01 What is Redbelly?",
+      "line": "Every participant is known.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        4
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "pass",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "01 What is Redbelly?",
+      "line": "Final in seconds",
+      "where": "title",
+      "label": false,
+      "facts": [
+        5
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "01 What is Redbelly?",
+      "line": "DBFT consensus. No forks.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        6
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "pass",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "01 What is Redbelly?",
+      "line": "Ethereum compatible",
+      "where": "title",
+      "label": false,
+      "facts": [
+        7
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "01 What is Redbelly?",
+      "line": "Runs Solidity smart contracts.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        8
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "01 What is Redbelly?",
+      "line": "Born at the University of Sydney, developed with CSIRO.",
+      "where": "note",
+      "label": false,
+      "facts": [
+        9,
+        10
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "line": "Why tokenise real world assets?",
+      "where": "title",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "line": "A token records who owns an asset and can carry its rules.",
+      "where": "lead",
+      "label": false,
+      "facts": [
+        1
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "line": "The benefits depend on the setup.",
+      "where": "lead",
+      "label": false,
+      "facts": [
+        2,
+        8,
+        10
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "line": "Today",
+      "where": "left",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "line": "Tokenised",
+      "where": "right",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "line": "Only if",
+      "where": "needs",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "line": "Settlement",
+      "where": "label",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "line": "A bond trade can take 2 to 4 days",
+      "where": "before",
+      "label": false,
+      "facts": [
+        3
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "pass",
+        "scope": "none",
+        "hedge": "pass"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "line": "Asset and payment swap in one step",
+      "where": "after",
+      "label": false,
+      "facts": [
+        4
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "pass",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "line": "The payment is on the same ledger",
+      "where": "needs",
+      "label": false,
+      "facts": [
+        4,
+        5
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "line": "Rules",
+      "where": "label",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "line": "Rule breaches often found late",
+      "where": "before",
+      "label": false,
+      "facts": [
+        6
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "pass"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "line": "Checked before every trade",
+      "where": "after",
+      "label": false,
+      "facts": [
+        7,
+        8
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "pass",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "line": "Identity is built into the network",
+      "where": "needs",
+      "label": false,
+      "facts": [
+        8
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "line": "Access",
+      "where": "label",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "line": "Higher minimums to invest",
+      "where": "before",
+      "label": false,
+      "facts": [
+        9
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "line": "Fractions, traded 24/7",
+      "where": "after",
+      "label": false,
+      "facts": [
+        10
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "pass",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "line": "A market runs 24/7",
+      "where": "needs",
+      "label": false,
+      "facts": [
+        10,
+        11
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "pass",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "line": "condition: \"same ledger\"",
+      "where": "condition",
+      "label": false,
+      "facts": [
+        4
+      ],
+      "checks": {
+        "condition": "pass"
+      },
+      "notes": [
+        "printed on the artwork (source: Tokenised: asset and payment swap in one step, but only when the payment is also on the same ledger.)"
+      ],
+      "result": "pass"
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "line": "condition: \"built into the network\"",
+      "where": "condition",
+      "label": false,
+      "facts": [
+        8
+      ],
+      "checks": {
+        "condition": "pass"
+      },
+      "notes": [
+        "printed on the artwork (source: Those checks rely on identity and eligibility built into the network (Tokeniser on Redbelly).)"
+      ],
+      "result": "pass"
+    },
+    {
+      "topic": "02 Why tokenise real world assets?",
+      "line": "condition: \"market\"",
+      "where": "condition",
+      "label": false,
+      "facts": [
+        10
+      ],
+      "checks": {
+        "condition": "pass"
+      },
+      "notes": [
+        "printed on the artwork (source: Tokenised: fractional ownership and 24/7 trading, which comes through protocol finance (a market for the tokens).)"
+      ],
+      "result": "pass"
+    },
+    {
+      "topic": "03 DBFT consensus",
+      "line": "DBFT consensus",
+      "where": "title",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "03 DBFT consensus",
+      "line": "Democratic Byzantine Fault Tolerance",
+      "where": "kicker",
+      "label": false,
+      "facts": [
+        1
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "03 DBFT consensus",
+      "line": "How Redbelly's nodes agree on the next block, with no leader.",
+      "where": "lead",
+      "label": false,
+      "facts": [
+        2
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "pass",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "03 DBFT consensus",
+      "line": "Classical chains",
+      "where": "label",
+      "label": false,
+      "facts": [
+        3
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "03 DBFT consensus",
+      "line": "Nodes compete",
+      "where": "title",
+      "label": false,
+      "facts": [
+        3
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "03 DBFT consensus",
+      "line": "One block wins. The rest is wasted.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        3
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "pass",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "03 DBFT consensus",
+      "line": "DBFT",
+      "where": "label",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "03 DBFT consensus",
+      "line": "Nodes cooperate",
+      "where": "title",
+      "label": false,
+      "facts": [
+        5
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "03 DBFT consensus",
+      "line": "Transactions join a superblock.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        4
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "03 DBFT consensus",
+      "line": "No leader",
+      "where": "title",
+      "label": false,
+      "facts": [
+        2,
+        6
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "pass",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "03 DBFT consensus",
+      "line": "Every node plays a similar role.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        6
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "pass",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "03 DBFT consensus",
+      "line": "No forks",
+      "where": "title",
+      "label": false,
+      "facts": [
+        7
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "pass",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "03 DBFT consensus",
+      "line": "A decided block is final.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        7,
+        8
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "03 DBFT consensus",
+      "line": "Fault tolerant",
+      "where": "title",
+      "label": false,
+      "facts": [
+        9
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "03 DBFT consensus",
+      "line": "Proven safe if under 1 in 3 nodes are faulty.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        9,
+        10
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "pass",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "03 DBFT consensus",
+      "line": "condition: \"under 1 in 3\"",
+      "where": "condition",
+      "label": false,
+      "facts": [
+        9
+      ],
+      "checks": {
+        "condition": "pass"
+      },
+      "notes": [
+        "printed on the artwork (source: Fault tolerant: proven (by model checking) safe for any number of nodes while fewer than 1 in 3 are faulty.)"
+      ],
+      "result": "pass"
+    },
+    {
+      "topic": "04 Receptor",
+      "line": "Receptor",
+      "where": "title",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "04 Receptor",
+      "line": "Redbelly's native identity protocol.",
+      "where": "lead",
+      "label": false,
+      "facts": [
+        1
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "04 Receptor",
+      "line": "It makes sure everyone on the network is who they say they are.",
+      "where": "lead",
+      "label": false,
+      "facts": [
+        2
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "pass",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "04 Receptor",
+      "line": "Lets verified users in",
+      "where": "title",
+      "label": false,
+      "facts": [
+        3
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "04 Receptor",
+      "line": "Access needs a credential from an accredited issuer.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        3
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "04 Receptor",
+      "line": "Sets the rules",
+      "where": "title",
+      "label": false,
+      "facts": [
+        4
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "04 Receptor",
+      "line": "Apps state who qualifies, such as accredited investors.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        4,
+        5
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "04 Receptor",
+      "line": "Proves you qualify",
+      "where": "title",
+      "label": false,
+      "facts": [
+        6
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "04 Receptor",
+      "line": "Without uploading documents.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        6
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "pass",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "04 Receptor",
+      "line": "Built on the W3C verifiable credential data model.",
+      "where": "note",
+      "label": false,
+      "facts": [
+        7
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "05 Verifiable credentials",
+      "line": "Verifiable credentials",
+      "where": "title",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "05 Verifiable credentials",
+      "line": "A digital proof about you, signed by whoever checked it.",
+      "where": "lead",
+      "label": false,
+      "facts": [
+        1
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "05 Verifiable credentials",
+      "line": "You keep it and share proof when asked.",
+      "where": "lead",
+      "label": false,
+      "facts": [
+        5
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "05 Verifiable credentials",
+      "line": "Issuer",
+      "where": "name",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "05 Verifiable credentials",
+      "line": "Checks you. Signs a credential.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        3,
+        4
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "05 Verifiable credentials",
+      "line": "Holder",
+      "where": "name",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "05 Verifiable credentials",
+      "line": "You. It stays in your wallet.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        5
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "05 Verifiable credentials",
+      "line": "Verifier",
+      "where": "name",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "05 Verifiable credentials",
+      "line": "Checks the issuer's signature.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        6
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "05 Verifiable credentials",
+      "line": "Issues",
+      "where": "issue",
+      "label": false,
+      "facts": [
+        2,
+        3
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "05 Verifiable credentials",
+      "line": "Shares proof",
+      "where": "share",
+      "label": false,
+      "facts": [
+        2,
+        5
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "05 Verifiable credentials",
+      "line": "Trusts issuer",
+      "where": "trust",
+      "label": false,
+      "facts": [
+        6
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "05 Verifiable credentials",
+      "line": "Reusable. Your data is not copied to every app.",
+      "where": "note",
+      "label": false,
+      "facts": [
+        7,
+        8
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "pass",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "06 Zero knowledge (ZK) proofs",
+      "line": "Zero knowledge (ZK) proofs",
+      "where": "title",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "06 Zero knowledge (ZK) proofs",
+      "line": "Prove something is true without revealing the data behind it.",
+      "where": "lead",
+      "label": false,
+      "facts": [
+        1
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "pass",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "06 Zero knowledge (ZK) proofs",
+      "line": "Over 18?",
+      "where": "ask",
+      "label": false,
+      "facts": [
+        2
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "pass",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "06 Zero knowledge (ZK) proofs",
+      "line": "true",
+      "where": "result",
+      "label": false,
+      "facts": [
+        6
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "06 Zero knowledge (ZK) proofs",
+      "line": "Ask",
+      "where": "title",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "06 Zero knowledge (ZK) proofs",
+      "line": "An app asks a yes or no question.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        2
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "pass",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "06 Zero knowledge (ZK) proofs",
+      "line": "Prove",
+      "where": "title",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "06 Zero knowledge (ZK) proofs",
+      "line": "Your wallet proves it. No data shown.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        3,
+        4,
+        6
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "pass",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "06 Zero knowledge (ZK) proofs",
+      "line": "Check",
+      "where": "title",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "06 Zero knowledge (ZK) proofs",
+      "line": "A smart contract verifies it.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        5
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "06 Zero knowledge (ZK) proofs",
+      "line": "Passport",
+      "where": "title",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "06 Zero knowledge (ZK) proofs",
+      "line": "Name",
+      "where": "rows",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "06 Zero knowledge (ZK) proofs",
+      "line": "Birth date",
+      "where": "rows",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "06 Zero knowledge (ZK) proofs",
+      "line": "Selective disclosure",
+      "where": "title",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "06 Zero knowledge (ZK) proofs",
+      "line": "Shows only the fields asked for.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        7
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "pass",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "06 Zero knowledge (ZK) proofs",
+      "line": "Zero knowledge",
+      "where": "title",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "06 Zero knowledge (ZK) proofs",
+      "line": "Shows no data. Only the proof.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        1,
+        8
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "pass",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "07 Tokeniser",
+      "line": "Tokeniser",
+      "where": "title",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "07 Tokeniser",
+      "line": "A Redbelly Network project.",
+      "where": "lead",
+      "label": false,
+      "facts": [
+        1
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "07 Tokeniser",
+      "line": "Funds and companies use it to issue and manage tokenised assets.",
+      "where": "lead",
+      "label": false,
+      "facts": [
+        2,
+        3
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "07 Tokeniser",
+      "line": "ISSUE",
+      "where": "tag",
+      "label": false,
+      "facts": [
+        4
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "07 Tokeniser",
+      "line": "Tokeniser",
+      "where": "name",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "07 Tokeniser",
+      "line": "Registry, investor portal and API.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        5
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "07 Tokeniser",
+      "line": "REACH",
+      "where": "tag",
+      "label": false,
+      "facts": [
+        6
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "07 Tokeniser",
+      "line": "Averer",
+      "where": "name",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "07 Tokeniser",
+      "line": "Identity and wallet. Credentials gate every holder.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        6
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "pass",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "07 Tokeniser",
+      "line": "SETTLE",
+      "where": "tag",
+      "label": false,
+      "facts": [
+        7,
+        8
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "07 Tokeniser",
+      "line": "Redbelly Network",
+      "where": "name",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "07 Tokeniser",
+      "line": "Final the moment it completes.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        7
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "07 Tokeniser",
+      "line": "Every holder verified. Every transfer checked against the rules.",
+      "where": "note",
+      "label": false,
+      "facts": [
+        9
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "pass",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "08 Compliance aware assets",
+      "line": "Compliance aware assets",
+      "where": "title",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "08 Compliance aware assets",
+      "line": "On Redbelly, an asset can carry its own rules.",
+      "where": "lead",
+      "label": false,
+      "facts": [
+        1
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "08 Compliance aware assets",
+      "line": "Every transfer is checked against them first.",
+      "where": "lead",
+      "label": false,
+      "facts": [
+        2,
+        3,
+        5
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "pass",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "08 Compliance aware assets",
+      "line": "Asset token",
+      "where": "name",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "08 Compliance aware assets",
+      "line": "Rules it carries",
+      "where": "caption",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "08 Compliance aware assets",
+      "line": "Holder is verified",
+      "where": "rules",
+      "label": false,
+      "facts": [
+        3
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "08 Compliance aware assets",
+      "line": "Holder is eligible",
+      "where": "rules",
+      "label": false,
+      "facts": [
+        3,
+        4
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "08 Compliance aware assets",
+      "line": "Within limits",
+      "where": "rules",
+      "label": false,
+      "facts": [
+        3
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "08 Compliance aware assets",
+      "line": "Passes",
+      "where": "title",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "08 Compliance aware assets",
+      "line": "Transfer completes",
+      "where": "text",
+      "label": false,
+      "facts": [
+        3
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "08 Compliance aware assets",
+      "line": "Fails",
+      "where": "title",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "08 Compliance aware assets",
+      "line": "Transfer stops",
+      "where": "text",
+      "label": false,
+      "facts": [
+        3
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "08 Compliance aware assets",
+      "line": "Set by the issuer",
+      "where": "title",
+      "label": false,
+      "facts": [
+        6
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "08 Compliance aware assets",
+      "line": "Under its licence.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        6
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "08 Compliance aware assets",
+      "line": "Logged",
+      "where": "title",
+      "label": false,
+      "facts": [
+        3
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "08 Compliance aware assets",
+      "line": "Every check is recorded.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        3
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "pass",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "08 Compliance aware assets",
+      "line": "Carried over",
+      "where": "title",
+      "label": false,
+      "facts": [
+        7
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "08 Compliance aware assets",
+      "line": "Rules follow it into other apps.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        7
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "line": "Identity and accountability",
+      "where": "title",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "line": "Every participant is known.",
+      "where": "lead",
+      "label": false,
+      "facts": [
+        1
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "pass",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "line": "Nodes that try to cause disagreement leave proof.",
+      "where": "lead",
+      "label": false,
+      "facts": [
+        4
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "line": "People",
+      "where": "label",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "line": "Known",
+      "where": "title",
+      "label": false,
+      "facts": [
+        2
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "line": "Verified by accredited issuers.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        2
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "line": "Traceable",
+      "where": "title",
+      "label": false,
+      "facts": [
+        3
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "pass"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "line": "Transactions can be tied to a responsible party.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        3
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "pass"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "line": "Nodes",
+      "where": "label",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "line": "Disagreement",
+      "where": "title",
+      "label": false,
+      "facts": [
+        5,
+        8
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "line": "Only if 1 in 3 or more nodes are faulty.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        6,
+        7,
+        8
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "pass",
+        "scope": "pass",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "line": "Proof of fraud",
+      "where": "title",
+      "label": false,
+      "facts": [
+        4,
+        8
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "line": "Their signed messages can name them.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        4,
+        5
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "line": "Removed",
+      "where": "title",
+      "label": false,
+      "facts": [
+        9
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "line": "Excluded from consensus with enough proof.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        9
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "line": "condition: \"disagreement\"",
+      "where": "condition",
+      "label": false,
+      "facts": [
+        4
+      ],
+      "checks": {
+        "condition": "pass"
+      },
+      "notes": [
+        "printed on the artwork (source: Proof comes from faulty nodes trying to cause disagreement among honest nodes: they leave signed traces that honest nodes combine into undeniable proofs of fraud.)"
+      ],
+      "result": "pass"
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "line": "condition: \"disagreement\"",
+      "where": "condition",
+      "label": false,
+      "facts": [
+        5
+      ],
+      "checks": {
+        "condition": "pass"
+      },
+      "notes": [
+        "printed on the artwork (source: The trigger is honest nodes disagreeing on the next block. The system can then, eventually, name the faulty nodes responsible (at least a third of the nodes, n/3).)"
+      ],
+      "result": "pass"
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "line": "condition: \"1 in 3\"",
+      "where": "condition",
+      "label": false,
+      "facts": [
+        6
+      ],
+      "checks": {
+        "condition": "pass"
+      },
+      "notes": [
+        "printed on the artwork (source: Disagreement is only possible with 1 in 3 or more faulty nodes: below that, DBFT is proven safe.)"
+      ],
+      "result": "pass"
+    },
+    {
+      "topic": "09 Identity and accountability",
+      "line": "condition: \"enough proof\"",
+      "where": "condition",
+      "label": false,
+      "facts": [
+        9
+      ],
+      "checks": {
+        "condition": "pass"
+      },
+      "notes": [
+        "printed on the artwork (source: Once honest nodes have enough proofs of fraud, a membership change removes the faulty nodes from the consensus committee.)"
+      ],
+      "result": "pass"
+    },
+    {
+      "topic": "10 Governance",
+      "line": "Governance",
+      "where": "title",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "10 Governance",
+      "line": "The Redbelly Community DAO votes on its own platform.",
+      "where": "lead",
+      "label": false,
+      "facts": [
+        1
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "10 Governance",
+      "line": "Only identity verified wallets can vote.",
+      "where": "lead",
+      "label": false,
+      "facts": [
+        2,
+        3
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "pass",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "10 Governance",
+      "line": "Propose",
+      "where": "title",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "10 Governance",
+      "line": "Locked once open.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        4
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "10 Governance",
+      "line": "Vote",
+      "where": "title",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "10 Governance",
+      "line": "Sign a message. No gas.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        5,
+        6
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "pass",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "10 Governance",
+      "line": "Count",
+      "where": "title",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "10 Governance",
+      "line": "RBNT held, or one per address.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        7,
+        8
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "pass",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "10 Governance",
+      "line": "Check",
+      "where": "title",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "10 Governance",
+      "line": "Anyone can re-check a ballot.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        9
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "pass",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "10 Governance",
+      "line": "High Council",
+      "where": "label",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "10 Governance",
+      "line": "3 seats",
+      "where": "text",
+      "label": false,
+      "facts": [
+        10
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "pass",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [
+        "3: the quote names three seat holders: Buffy, NekoyaManeki and Light"
+      ],
+      "result": "pass"
+    },
+    {
+      "topic": "10 Governance",
+      "line": "Working groups",
+      "where": "label",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "10 Governance",
+      "line": "5 pods",
+      "where": "text",
+      "label": false,
+      "facts": [
+        11
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "pass",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "10 Governance",
+      "line": "Treasury",
+      "where": "label",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "10 Governance",
+      "line": "New funding paused",
+      "where": "text",
+      "label": false,
+      "facts": [
+        12
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "10 Governance",
+      "line": "Voting moved off Snapshot. Past votes are imported.",
+      "where": "note",
+      "label": false,
+      "facts": [
+        13
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "11 Project Acacia",
+      "line": "Project Acacia",
+      "where": "title",
+      "label": true,
+      "facts": [],
+      "checks": {},
+      "notes": [],
+      "result": "label"
+    },
+    {
+      "topic": "11 Project Acacia",
+      "line": "A real money pilot of tokenised assets by the Reserve Bank of Australia (RBA) and the DFCRC.",
+      "where": "lead",
+      "label": false,
+      "facts": [
+        1
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "11 Project Acacia",
+      "line": "1 of 3",
+      "where": "big",
+      "label": false,
+      "facts": [
+        2
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "pass",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "11 Project Acacia",
+      "line": "platforms the RBA issued pilot digital money onto. The only public one.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        2,
+        3
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "pass",
+        "scope": "pass",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "11 Project Acacia",
+      "line": "5 of 20",
+      "where": "big",
+      "label": false,
+      "facts": [
+        4
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "pass",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "11 Project Acacia",
+      "line": "completed use cases ran on Redbelly's mainnet.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        4
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "11 Project Acacia",
+      "line": "Under",
+      "where": "pre",
+      "label": false,
+      "facts": [
+        5
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "11 Project Acacia",
+      "line": "4 min",
+      "where": "big",
+      "label": false,
+      "facts": [
+        5
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "pass",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "11 Project Acacia",
+      "line": "to issue and resell a tokenised bond. Normally up to 4 days.",
+      "where": "text",
+      "label": false,
+      "facts": [
+        5,
+        6,
+        7
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "pass",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "11 Project Acacia",
+      "line": "Jul 2025",
+      "where": "when",
+      "label": false,
+      "facts": [
+        1
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "pass",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "11 Project Acacia",
+      "line": "Participants named",
+      "where": "what",
+      "label": false,
+      "facts": [
+        1
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "11 Project Acacia",
+      "line": "Feb 2026",
+      "where": "when",
+      "label": false,
+      "facts": [
+        8
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "pass",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "11 Project Acacia",
+      "line": "Testing ends",
+      "where": "what",
+      "label": false,
+      "facts": [
+        8
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "11 Project Acacia",
+      "line": "May 2026",
+      "where": "when",
+      "label": false,
+      "facts": [
+        9
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "pass",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    },
+    {
+      "topic": "11 Project Acacia",
+      "line": "Final report",
+      "where": "what",
+      "label": false,
+      "facts": [
+        9
+      ],
+      "checks": {
+        "traced": "pass",
+        "numbers": "none",
+        "scope": "none",
+        "hedge": "none"
+      },
+      "notes": [],
+      "result": "pass"
+    }
+  ],
+  "problems": []
+}
